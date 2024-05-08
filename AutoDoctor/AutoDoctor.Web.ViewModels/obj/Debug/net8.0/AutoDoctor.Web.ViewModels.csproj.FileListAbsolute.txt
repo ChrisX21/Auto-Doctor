@@ -1,0 +1,15 @@
+C:\Users\chris\Music\Projects\Auto-Doctor\AutoDoctor\AutoDoctor.Web.ViewModels\bin\Debug\net8.0\AutoDoctor.Web.ViewModels.deps.json
+C:\Users\chris\Music\Projects\Auto-Doctor\AutoDoctor\AutoDoctor.Web.ViewModels\bin\Debug\net8.0\AutoDoctor.Web.ViewModels.dll
+C:\Users\chris\Music\Projects\Auto-Doctor\AutoDoctor\AutoDoctor.Web.ViewModels\bin\Debug\net8.0\AutoDoctor.Web.ViewModels.pdb
+C:\Users\chris\Music\Projects\Auto-Doctor\AutoDoctor\AutoDoctor.Web.ViewModels\obj\Debug\net8.0\AutoDoctor.Web.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chris\Music\Projects\Auto-Doctor\AutoDoctor\AutoDoctor.Web.ViewModels\obj\Debug\net8.0\AutoDoctor.Web.ViewModels.AssemblyInfoInputs.cache
+C:\Users\chris\Music\Projects\Auto-Doctor\AutoDoctor\AutoDoctor.Web.ViewModels\obj\Debug\net8.0\AutoDoctor.Web.ViewModels.AssemblyInfo.cs
+C:\Users\chris\Music\Projects\Auto-Doctor\AutoDoctor\AutoDoctor.Web.ViewModels\obj\Debug\net8.0\AutoDoctor.Web.ViewModels.csproj.CoreCompileInputs.cache
+C:\Users\chris\Music\Projects\Auto-Doctor\AutoDoctor\AutoDoctor.Web.ViewModels\obj\Debug\net8.0\AutoDoctor.Web.ViewModels.sourcelink.json
+C:\Users\chris\Music\Projects\Auto-Doctor\AutoDoctor\AutoDoctor.Web.ViewModels\obj\Debug\net8.0\AutoDoctor.Web.ViewModels.dll
+C:\Users\chris\Music\Projects\Auto-Doctor\AutoDoctor\AutoDoctor.Web.ViewModels\obj\Debug\net8.0\refint\AutoDoctor.Web.ViewModels.dll
+C:\Users\chris\Music\Projects\Auto-Doctor\AutoDoctor\AutoDoctor.Web.ViewModels\obj\Debug\net8.0\AutoDoctor.Web.ViewModels.pdb
+C:\Users\chris\Music\Projects\Auto-Doctor\AutoDoctor\AutoDoctor.Web.ViewModels\obj\Debug\net8.0\ref\AutoDoctor.Web.ViewModels.dll
+C:\Users\chris\Music\Projects\Auto-Doctor\AutoDoctor\AutoDoctor.Web.ViewModels\bin\Debug\net8.0\AutoDoctor.Web.ViewModels.runtimeconfig.json
+C:\Users\chris\Music\Projects\Auto-Doctor\AutoDoctor\AutoDoctor.Web.ViewModels\obj\Debug\net8.0\AutoDoctor.Web.ViewModels.csproj.AssemblyReference.cache
+C:\Users\chris\Music\Projects\Auto-Doctor\AutoDoctor\AutoDoctor.Web.ViewModels\obj\Debug\net8.0\AutoDoctor.Web.ViewModels.genruntimeconfig.cache

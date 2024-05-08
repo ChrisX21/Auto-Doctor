@@ -15,4 +15,9 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AutoDoctor.Data\AutoDoctor.Data.csproj" />
+    <ProjectReference Include="..\AutoDoctor.Web.ViewModels\AutoDoctor.Web.ViewModels.csproj" />
+  </ItemGroup>
+
 </Project>

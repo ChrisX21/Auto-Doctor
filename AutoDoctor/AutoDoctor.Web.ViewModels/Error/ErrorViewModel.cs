@@ -1,4 +1,4 @@
-namespace AutoDoctor.Models
+namespace AutoDoctor.Web.ViewModels.Error
 {
     public class ErrorViewModel
     {

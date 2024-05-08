@@ -1,0 +1,15 @@
+C:\Users\chris\Music\Projects\Auto-Doctor\AutoDoctor\AutoDoctor.Data\bin\Debug\net8.0\AutoDoctor.Data.deps.json
+C:\Users\chris\Music\Projects\Auto-Doctor\AutoDoctor\AutoDoctor.Data\bin\Debug\net8.0\AutoDoctor.Data.runtimeconfig.json
+C:\Users\chris\Music\Projects\Auto-Doctor\AutoDoctor\AutoDoctor.Data\bin\Debug\net8.0\AutoDoctor.Data.dll
+C:\Users\chris\Music\Projects\Auto-Doctor\AutoDoctor\AutoDoctor.Data\bin\Debug\net8.0\AutoDoctor.Data.pdb
+C:\Users\chris\Music\Projects\Auto-Doctor\AutoDoctor\AutoDoctor.Data\obj\Debug\net8.0\AutoDoctor.Data.csproj.AssemblyReference.cache
+C:\Users\chris\Music\Projects\Auto-Doctor\AutoDoctor\AutoDoctor.Data\obj\Debug\net8.0\AutoDoctor.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chris\Music\Projects\Auto-Doctor\AutoDoctor\AutoDoctor.Data\obj\Debug\net8.0\AutoDoctor.Data.AssemblyInfoInputs.cache
+C:\Users\chris\Music\Projects\Auto-Doctor\AutoDoctor\AutoDoctor.Data\obj\Debug\net8.0\AutoDoctor.Data.AssemblyInfo.cs
+C:\Users\chris\Music\Projects\Auto-Doctor\AutoDoctor\AutoDoctor.Data\obj\Debug\net8.0\AutoDoctor.Data.csproj.CoreCompileInputs.cache
+C:\Users\chris\Music\Projects\Auto-Doctor\AutoDoctor\AutoDoctor.Data\obj\Debug\net8.0\AutoDoctor.Data.sourcelink.json
+C:\Users\chris\Music\Projects\Auto-Doctor\AutoDoctor\AutoDoctor.Data\obj\Debug\net8.0\AutoDoctor.Data.dll
+C:\Users\chris\Music\Projects\Auto-Doctor\AutoDoctor\AutoDoctor.Data\obj\Debug\net8.0\refint\AutoDoctor.Data.dll
+C:\Users\chris\Music\Projects\Auto-Doctor\AutoDoctor\AutoDoctor.Data\obj\Debug\net8.0\AutoDoctor.Data.pdb
+C:\Users\chris\Music\Projects\Auto-Doctor\AutoDoctor\AutoDoctor.Data\obj\Debug\net8.0\AutoDoctor.Data.genruntimeconfig.cache
+C:\Users\chris\Music\Projects\Auto-Doctor\AutoDoctor\AutoDoctor.Data\obj\Debug\net8.0\ref\AutoDoctor.Data.dll

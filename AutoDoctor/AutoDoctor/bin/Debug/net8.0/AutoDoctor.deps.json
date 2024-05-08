@@ -8,6 +8,8 @@
     ".NETCoreApp,Version=v8.0": {
       "AutoDoctor/1.0.0": {
         "dependencies": {
+          "AutoDoctor.Data": "1.0.0",
+          "AutoDoctor.Web.ViewModels": "1.0.0",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "8.0.4",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.4",
           "Microsoft.AspNetCore.Identity.UI": "8.0.4",
@@ -960,6 +962,28 @@
             "fileVersion": "6.0.21.52210"
           }
         }
+      },
+      "AutoDoctor.Data/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "8.0.4",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.4",
+          "Microsoft.AspNetCore.Identity.UI": "8.0.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.4"
+        },
+        "runtime": {
+          "AutoDoctor.Data.dll": {}
+        }
+      },
+      "AutoDoctor.Web.ViewModels/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "8.0.4",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.4",
+          "Microsoft.AspNetCore.Identity.UI": "8.0.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.4"
+        },
+        "runtime": {
+          "AutoDoctor.Web.ViewModels.dll": {}
+        }
       }
     }
   },
@@ -1563,6 +1587,16 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "AutoDoctor.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AutoDoctor.Web.ViewModels/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
