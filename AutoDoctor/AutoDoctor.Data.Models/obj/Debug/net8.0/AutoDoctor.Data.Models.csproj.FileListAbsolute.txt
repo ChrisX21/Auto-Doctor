@@ -1,0 +1,15 @@
+G:\Projects\Programming\Auto-Doctor\AutoDoctor\AutoDoctor.Data.Models\bin\Debug\net8.0\AutoDoctor.Data.Models.deps.json
+G:\Projects\Programming\Auto-Doctor\AutoDoctor\AutoDoctor.Data.Models\bin\Debug\net8.0\AutoDoctor.Data.Models.runtimeconfig.json
+G:\Projects\Programming\Auto-Doctor\AutoDoctor\AutoDoctor.Data.Models\bin\Debug\net8.0\AutoDoctor.Data.Models.dll
+G:\Projects\Programming\Auto-Doctor\AutoDoctor\AutoDoctor.Data.Models\bin\Debug\net8.0\AutoDoctor.Data.Models.pdb
+G:\Projects\Programming\Auto-Doctor\AutoDoctor\AutoDoctor.Data.Models\obj\Debug\net8.0\AutoDoctor.Data.Models.csproj.AssemblyReference.cache
+G:\Projects\Programming\Auto-Doctor\AutoDoctor\AutoDoctor.Data.Models\obj\Debug\net8.0\AutoDoctor.Data.Models.GeneratedMSBuildEditorConfig.editorconfig
+G:\Projects\Programming\Auto-Doctor\AutoDoctor\AutoDoctor.Data.Models\obj\Debug\net8.0\AutoDoctor.Data.Models.AssemblyInfoInputs.cache
+G:\Projects\Programming\Auto-Doctor\AutoDoctor\AutoDoctor.Data.Models\obj\Debug\net8.0\AutoDoctor.Data.Models.AssemblyInfo.cs
+G:\Projects\Programming\Auto-Doctor\AutoDoctor\AutoDoctor.Data.Models\obj\Debug\net8.0\AutoDoctor.Data.Models.csproj.CoreCompileInputs.cache
+G:\Projects\Programming\Auto-Doctor\AutoDoctor\AutoDoctor.Data.Models\obj\Debug\net8.0\AutoDoctor.Data.Models.sourcelink.json
+G:\Projects\Programming\Auto-Doctor\AutoDoctor\AutoDoctor.Data.Models\obj\Debug\net8.0\AutoDoctor.Data.Models.dll
+G:\Projects\Programming\Auto-Doctor\AutoDoctor\AutoDoctor.Data.Models\obj\Debug\net8.0\refint\AutoDoctor.Data.Models.dll
+G:\Projects\Programming\Auto-Doctor\AutoDoctor\AutoDoctor.Data.Models\obj\Debug\net8.0\AutoDoctor.Data.Models.pdb
+G:\Projects\Programming\Auto-Doctor\AutoDoctor\AutoDoctor.Data.Models\obj\Debug\net8.0\AutoDoctor.Data.Models.genruntimeconfig.cache
+G:\Projects\Programming\Auto-Doctor\AutoDoctor\AutoDoctor.Data.Models\obj\Debug\net8.0\ref\AutoDoctor.Data.Models.dll

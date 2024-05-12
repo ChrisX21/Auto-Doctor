@@ -1,0 +1,15 @@
+G:\Projects\Programming\Auto-Doctor\AutoDoctor\AutoDoctor.Common\bin\Debug\net8.0\AutoDoctor.Common.deps.json
+G:\Projects\Programming\Auto-Doctor\AutoDoctor\AutoDoctor.Common\bin\Debug\net8.0\AutoDoctor.Common.runtimeconfig.json
+G:\Projects\Programming\Auto-Doctor\AutoDoctor\AutoDoctor.Common\bin\Debug\net8.0\AutoDoctor.Common.dll
+G:\Projects\Programming\Auto-Doctor\AutoDoctor\AutoDoctor.Common\bin\Debug\net8.0\AutoDoctor.Common.pdb
+G:\Projects\Programming\Auto-Doctor\AutoDoctor\AutoDoctor.Common\obj\Debug\net8.0\AutoDoctor.Common.csproj.AssemblyReference.cache
+G:\Projects\Programming\Auto-Doctor\AutoDoctor\AutoDoctor.Common\obj\Debug\net8.0\AutoDoctor.Common.GeneratedMSBuildEditorConfig.editorconfig
+G:\Projects\Programming\Auto-Doctor\AutoDoctor\AutoDoctor.Common\obj\Debug\net8.0\AutoDoctor.Common.AssemblyInfoInputs.cache
+G:\Projects\Programming\Auto-Doctor\AutoDoctor\AutoDoctor.Common\obj\Debug\net8.0\AutoDoctor.Common.AssemblyInfo.cs
+G:\Projects\Programming\Auto-Doctor\AutoDoctor\AutoDoctor.Common\obj\Debug\net8.0\AutoDoctor.Common.csproj.CoreCompileInputs.cache
+G:\Projects\Programming\Auto-Doctor\AutoDoctor\AutoDoctor.Common\obj\Debug\net8.0\AutoDoctor.Common.sourcelink.json
+G:\Projects\Programming\Auto-Doctor\AutoDoctor\AutoDoctor.Common\obj\Debug\net8.0\AutoDoctor.Common.dll
+G:\Projects\Programming\Auto-Doctor\AutoDoctor\AutoDoctor.Common\obj\Debug\net8.0\refint\AutoDoctor.Common.dll
+G:\Projects\Programming\Auto-Doctor\AutoDoctor\AutoDoctor.Common\obj\Debug\net8.0\AutoDoctor.Common.pdb
+G:\Projects\Programming\Auto-Doctor\AutoDoctor\AutoDoctor.Common\obj\Debug\net8.0\AutoDoctor.Common.genruntimeconfig.cache
+G:\Projects\Programming\Auto-Doctor\AutoDoctor\AutoDoctor.Common\obj\Debug\net8.0\ref\AutoDoctor.Common.dll

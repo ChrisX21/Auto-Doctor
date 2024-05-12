@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AutoDoctor.Data.Models\AutoDoctor.Data.Models.csproj" />
     <ProjectReference Include="..\AutoDoctor.Data\AutoDoctor.Data.csproj" />
     <ProjectReference Include="..\AutoDoctor.Web.ViewModels\AutoDoctor.Web.ViewModels.csproj" />
   </ItemGroup>

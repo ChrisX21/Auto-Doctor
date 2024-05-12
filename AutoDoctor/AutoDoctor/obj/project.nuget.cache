@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "B3Cz9Dhk3j+mdIfebsJreZBqmr0SlEqyCCVNVj7w3Rd6e+Lbbv7GNJK7fqvBlO0EYjd1twAEubfvmXMrqVJ+CA==",
+  "dgSpecHash": "szF66zDUB+fzTz4D3hs40gUjNr5IeLy8tjj3lo4KaaWh6F7lXGiKVduHkYe+JCy+buPrRwg7X4f4O+K/b/+s6w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\chris\\Music\\Projects\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\AutoDoctor.csproj",
+  "projectFilePath": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\AutoDoctor.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chris\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
