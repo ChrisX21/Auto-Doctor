@@ -26,6 +26,7 @@ namespace AutoDoctor
             {
                 options.Password.RequireDigit = true;
                 options.Password.RequireUppercase = true;
+                options.Password.RequireLowercase = false;
                 options.Password.RequireNonAlphanumeric = false;
                 options.User.RequireUniqueEmail = true;
                 options.SignIn.RequireConfirmedEmail = false;

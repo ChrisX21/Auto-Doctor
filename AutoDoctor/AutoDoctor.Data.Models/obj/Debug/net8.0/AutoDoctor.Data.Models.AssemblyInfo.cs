@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AutoDoctor.Data.Models")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+03a8a0476b6219a31b175d57114687502f207c6f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9020e0fbea93ce87fda9b51a37239b12dad46e7a")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutoDoctor.Data.Models")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutoDoctor.Data.Models")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

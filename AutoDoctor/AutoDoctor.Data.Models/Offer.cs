@@ -12,5 +12,6 @@ namespace AutoDoctor.Data.Models
         public string ImageUrl { get; set; } = null!;
         public int Views { get; set; } = 0;
         public int Likes { get; set; } = 0;
+        public ICollection<Vehicle> Vehicles { get; set; } = new HashSet<Vehicle>();
     }
 }
