@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AutoDoctor.Data.Repositories
 {
-    public interface IVehicle
+    public interface IVehicleRepository
     {
         public void AddVehicle();
         public void UpdateVehicle();
