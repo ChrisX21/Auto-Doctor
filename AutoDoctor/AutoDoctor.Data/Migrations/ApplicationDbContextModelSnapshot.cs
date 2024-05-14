@@ -121,7 +121,7 @@ namespace AutoDoctor.Data.Migrations
 
                     b.HasIndex("ApplicationUserId");
 
-                    b.ToTable("Offer");
+                    b.ToTable("Offer", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
