@@ -5,13 +5,11 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoDoctor", "AutoDoctor\AutoDoctor.csproj", "{3BFA9F32-602B-41F4-B925-61698380631F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoDoctor.Web.ViewModels", "AutoDoctor.Web.ViewModels\AutoDoctor.Web.ViewModels.csproj", "{0565D184-59B8-4A6B-B40B-C7C0567076BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoDoctor.Web.ViewModels", "AutoDoctor.Web.ViewModels\AutoDoctor.Web.ViewModels.csproj", "{0565D184-59B8-4A6B-B40B-C7C0567076BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoDoctor.Common", "AutoDoctor.Common\AutoDoctor.Common.csproj", "{BC998606-CC37-477E-B6F1-43A54DBDBBF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoDoctor.Data", "AutoDoctor.Data\AutoDoctor.Data.csproj", "{B751A690-492D-437C-8F8F-8E75980B0DCF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoDoctor.Data", "AutoDoctor.Data\AutoDoctor.Data.csproj", "{B751A690-492D-437C-8F8F-8E75980B0DCF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoDoctor.Data.Models", "AutoDoctor.Data.Models\AutoDoctor.Data.Models.csproj", "{26441245-1738-4CCE-BC11-30D31FAF1D9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoDoctor.Data.Models", "AutoDoctor.Data.Models\AutoDoctor.Data.Models.csproj", "{26441245-1738-4CCE-BC11-30D31FAF1D9F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,10 +25,6 @@ Global
 		{0565D184-59B8-4A6B-B40B-C7C0567076BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0565D184-59B8-4A6B-B40B-C7C0567076BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0565D184-59B8-4A6B-B40B-C7C0567076BB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BC998606-CC37-477E-B6F1-43A54DBDBBF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BC998606-CC37-477E-B6F1-43A54DBDBBF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BC998606-CC37-477E-B6F1-43A54DBDBBF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BC998606-CC37-477E-B6F1-43A54DBDBBF4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B751A690-492D-437C-8F8F-8E75980B0DCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B751A690-492D-437C-8F8F-8E75980B0DCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B751A690-492D-437C-8F8F-8E75980B0DCF}.Release|Any CPU.ActiveCfg = Release|Any CPU

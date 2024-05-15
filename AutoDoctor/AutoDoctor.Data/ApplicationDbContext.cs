@@ -15,5 +15,15 @@ namespace AutoDoctor.Data
             : base(options)
         {
         }
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.Entity<Offer>()
+                .HasOne(o => o.User)
+                .WithMany(u => u.Offers)
+                .HasForeignKey(o => o.UserId)
+                .OnDelete(DeleteBehavior.Restrict);
+            base.OnModelCreating(builder);  
+        }
     }
 }
