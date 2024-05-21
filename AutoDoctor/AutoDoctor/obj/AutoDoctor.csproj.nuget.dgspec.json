@@ -214,7 +214,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data.Models\\AutoDoctor.Data.Models.csproj": {
+                "projectPath": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data.Models\\AutoDoctor.Data.Models.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

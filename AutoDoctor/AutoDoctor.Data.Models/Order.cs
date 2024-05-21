@@ -31,6 +31,6 @@ namespace AutoDoctor.Data.Models
         public Guid OfferId { get; set; }
         [Required]
         public Offer Offer { get; set; } = null!;
-        public ApplicationUser User { get; set; }
+        public ApplicationUser User { get; set; } = null!;
     }
 }

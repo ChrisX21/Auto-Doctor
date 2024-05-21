@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AutoDoctor.Web.ViewModels")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ea6561749fe98d15c2aec6364f42ec52d3f89e9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+96509c12a2c03899aa0a306760278c4f341b9d49")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutoDoctor.Web.ViewModels")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutoDoctor.Web.ViewModels")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

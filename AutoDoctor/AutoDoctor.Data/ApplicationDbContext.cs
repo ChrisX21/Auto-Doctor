@@ -7,9 +7,9 @@ namespace AutoDoctor.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        public DbSet<Offer> Offers { get; set; } = null!;
-        public DbSet<Order> Orders { get; set; } = null!;
-        public DbSet<Vehicle> Vehicles { get; set; } = null!;
+        public DbSet<Offer> Offers { get; set; } 
+        public DbSet<Order> Orders { get; set; } 
+        public DbSet<Vehicle> Vehicles { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)

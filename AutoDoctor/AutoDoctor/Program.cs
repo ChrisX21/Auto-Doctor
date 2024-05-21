@@ -2,6 +2,8 @@ using AutoDoctor.Data;
 using Microsoft.AspNetCore.Identity;
 using AutoDoctor.Data.Models;
 using Microsoft.EntityFrameworkCore;
+using AutoDoctor.Data.Repositories;
+using AutoDoctor.Data.Services;
 
 namespace AutoDoctor
 {
@@ -22,6 +24,8 @@ namespace AutoDoctor
                 .AddDefaultTokenProviders()
                 .AddDefaultUI();
             
+            builder.Services.AddScoped<IOfferRepository, OfferService>();
+
             builder.Services.Configure<IdentityOptions>(options =>
             {
                 options.Password.RequireDigit = true;

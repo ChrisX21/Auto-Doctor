@@ -2168,6 +2168,7 @@
       },
       "AutoDoctor.Web.ViewModels/1.0.0": {
         "dependencies": {
+          "AutoDoctor.Data.Models": "1.0.0",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "8.0.4",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.4",
           "Microsoft.AspNetCore.Identity.UI": "8.0.4",

@@ -14,8 +14,10 @@ namespace AutoDoctor.Data.Models
         [Key]
         public Guid Id { get; set; } = new Guid();
         [ForeignKey(nameof(User))]
+        [Required]
         public string UserId { get; set; } = null!;
         public DateTime CreatedAt { get; set; }
+        [Required, MaxLength(50)]
         public string Title { get; set; } = null!;
         public string Description { get; set; } = null!;
         [Column(TypeName = "money")]
@@ -23,7 +25,7 @@ namespace AutoDoctor.Data.Models
         public string ImageUrl { get; set; } = null!;
         public int Views { get; set; } = 0;
         public int Likes { get; set; } = 0;
-        public ApplicationUser User { get; set; } 
+        public ApplicationUser User { get; set; } = null!;
         public ICollection<Vehicle> Vehicles { get; set; } = new HashSet<Vehicle>();
     }
 }
