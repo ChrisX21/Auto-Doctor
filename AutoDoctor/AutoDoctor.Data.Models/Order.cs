@@ -19,12 +19,17 @@ namespace AutoDoctor.Data.Models
         [Key]
         public Guid Id { get; set; }
         public string Status { get; set; } = null!;
+        [Required]
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
+        
         [ForeignKey(nameof(User))]
+        [Required]
         public string UserId { get; set; } = null!;
         [ForeignKey(nameof(Offer))]
+        [Required]
         public Guid OfferId { get; set; }
+        [Required]
         public Offer Offer { get; set; } = null!;
         public ApplicationUser User { get; set; }
     }
