@@ -8,6 +8,8 @@ namespace AutoDoctor.Web.ViewModels.Vehicle
 {
     public class VehicleViewModel
     {
-
+        public string Make { get; set; } = null!;
+        public string Model { get; set; } = null!;
+        public int Year { get; set; }
     }
 }

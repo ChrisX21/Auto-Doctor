@@ -18,7 +18,7 @@ namespace AutoDoctor.Data.Services
             _context = context;
         }
 
-        public Task AddOffer()
+        public Task AddOffer(Offer offer)
         {
             throw new NotImplementedException();
         }
@@ -32,8 +32,9 @@ namespace AutoDoctor.Data.Services
 
         public Task GetOfferById(Guid OfferId)
         {
-            throw new NotImplementedException();
+            return _context.Offers.FirstOrDefaultAsync(offer => offer.Id == OfferId);
         }
+
 
         public Task UpdateOffer(Guid OfferId)
         {

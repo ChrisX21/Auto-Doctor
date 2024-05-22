@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MVbJhIDnLPrqWXYI10yeCbQRYgrnyWyYX3bTRO9IScbYnG8bVAa/XMQNuPmaoXRHLdXgcEOPTRZX6cSAOvRVUQ==",
+  "dgSpecHash": "kvtQAGouKATxLTQQ3VmThY/C04UE008IaL9qw5+d9ny62jKTaT484Gg2HeAfzsXzVV4uCZ68Fqs9ibnb9VIqRQ==",
   "success": true,
-  "projectFilePath": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Web.ViewModels\\AutoDoctor.Web.ViewModels.csproj",
+  "projectFilePath": "C:\\Users\\chris\\Music\\Projects\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Web.ViewModels\\AutoDoctor.Web.ViewModels.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chris\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

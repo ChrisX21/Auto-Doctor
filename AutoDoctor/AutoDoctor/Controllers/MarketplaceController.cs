@@ -22,8 +22,9 @@ namespace AutoDoctor.Controllers
                 {
                     ImageUrl = offer.ImageUrl,
                     Title = offer.Title,
-                    Description = offer.Description,
                     Price = offer.Price,
+                    Views = offer.Views,
+                    Likes = offer.Likes,
                     User = offer.User
                 });
 
@@ -35,21 +36,10 @@ namespace AutoDoctor.Controllers
             return View(model);
         }
         
-        public IActionResult Details()
+        public IActionResult Details(Guid Id)
         {
-            //OfferDetailsViewModel model = new OfferDetailsViewModel
-            //{
-            //    ImageUrl = "https://via.placeholder.com/150",
-            //    Title = "Offer Title",
-            //    Description = "Offer Description",
-            //    Price = 100,
-            //    Vehicle = new VehicleViewModel
-            //    {
-            //        Make = "Make",
-            //        Model = "Model",
-            //        Year = 2020
-            //    }
-            //};
+            
+            
             return View();
         }
 
