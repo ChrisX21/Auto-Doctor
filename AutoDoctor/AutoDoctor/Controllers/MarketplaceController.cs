@@ -20,6 +20,7 @@ namespace AutoDoctor.Controllers
                 .GetAllOffers()
                 .Select(offer => new AllOffersViewModel
                 {
+                    OfferId = offer.Id,
                     ImageUrl = offer.ImageUrl,
                     Title = offer.Title,
                     Price = offer.Price,
@@ -38,9 +39,9 @@ namespace AutoDoctor.Controllers
         
         public IActionResult Details(Guid Id)
         {
-            
-            
-            return View();
+            var offer = _offerRepository.GetOfferById(Id);
+
+            return View(offer);
         }
 
         public IActionResult Error()

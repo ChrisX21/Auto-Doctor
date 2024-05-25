@@ -9,6 +9,12 @@ namespace AutoDoctor.Data.Services
 {
     public class VehicleService : IVehicleRepository
     {
+        private readonly ApplicationDbContext _context;
+        public VehicleService(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
         public void AddVehicle()
         {
             throw new NotImplementedException();

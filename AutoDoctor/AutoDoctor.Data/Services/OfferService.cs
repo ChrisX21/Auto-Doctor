@@ -32,9 +32,21 @@ namespace AutoDoctor.Data.Services
 
         public Task GetOfferById(Guid OfferId)
         {
-            return _context.Offers.FirstOrDefaultAsync(offer => offer.Id == OfferId);
-        }
+            return _context.Offers.Where(offer => OfferId == offer.Id).Select(offer => new Offer
+            {
+                Id = offer.Id,
+                ImageUrl = offer.ImageUrl,
+                CreatedAt = offer.CreatedAt,
+                Title = offer.Title,
+                Description = offer.Description,
+                Price = offer.Price,
+                Views = offer.Views,
+                Likes = offer.Likes,
+                User = offer.User,
+                Vehicles = offer.Vehicles
 
+            }).FirstOrDefaultAsync();
+        }
 
         public Task UpdateOffer(Guid OfferId)
         {
