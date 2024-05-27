@@ -6,10 +6,10 @@ namespace AutoDoctor.Data.Repositories
     public interface IOfferRepository
     {
         public IEnumerable<Offer> GetAllOffers();
+        public Offer GetOfferById(Guid OfferId);
         public Task AddOffer(Offer offer);
         public Task UpdateOffer(Guid OfferId);
         public Task DeleteOffer(Guid OfferId);
-        public Task GetOfferById(Guid OfferId);
 
     }
 }

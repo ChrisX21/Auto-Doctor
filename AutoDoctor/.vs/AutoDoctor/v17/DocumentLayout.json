@@ -1,34 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\chris\\Music\\Projects\\Auto-Doctor\\AutoDoctor\\",
+  "WorkspaceRootPath": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3BFA9F32-602B-41F4-B925-61698380631F}|AutoDoctor\\AutoDoctor.csproj|c:\\users\\chris\\music\\projects\\auto-doctor\\autodoctor\\autodoctor\\controllers\\marketplacecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BFA9F32-602B-41F4-B925-61698380631F}|AutoDoctor\\AutoDoctor.csproj|solutionrelative:autodoctor\\controllers\\marketplacecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26441245-1738-4CCE-BC11-30D31FAF1D9F}|AutoDoctor.Data.Models\\AutoDoctor.Data.Models.csproj|g:\\projects\\programming\\auto-doctor\\autodoctor\\autodoctor.data.models\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26441245-1738-4CCE-BC11-30D31FAF1D9F}|AutoDoctor.Data.Models\\AutoDoctor.Data.Models.csproj|solutionrelative:autodoctor.data.models\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B751A690-492D-437C-8F8F-8E75980B0DCF}|AutoDoctor.Data\\AutoDoctor.Data.csproj|c:\\users\\chris\\music\\projects\\auto-doctor\\autodoctor\\autodoctor.data\\services\\offerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B751A690-492D-437C-8F8F-8E75980B0DCF}|AutoDoctor.Data\\AutoDoctor.Data.csproj|solutionrelative:autodoctor.data\\services\\offerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26441245-1738-4CCE-BC11-30D31FAF1D9F}|AutoDoctor.Data.Models\\AutoDoctor.Data.Models.csproj|g:\\projects\\programming\\auto-doctor\\autodoctor\\autodoctor.data.models\\part.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26441245-1738-4CCE-BC11-30D31FAF1D9F}|AutoDoctor.Data.Models\\AutoDoctor.Data.Models.csproj|solutionrelative:autodoctor.data.models\\part.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26441245-1738-4CCE-BC11-30D31FAF1D9F}|AutoDoctor.Data.Models\\AutoDoctor.Data.Models.csproj|c:\\users\\chris\\music\\projects\\auto-doctor\\autodoctor\\autodoctor.data.models\\offer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{26441245-1738-4CCE-BC11-30D31FAF1D9F}|AutoDoctor.Data.Models\\AutoDoctor.Data.Models.csproj|g:\\projects\\programming\\auto-doctor\\autodoctor\\autodoctor.data.models\\offer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26441245-1738-4CCE-BC11-30D31FAF1D9F}|AutoDoctor.Data.Models\\AutoDoctor.Data.Models.csproj|solutionrelative:autodoctor.data.models\\offer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3BFA9F32-602B-41F4-B925-61698380631F}|AutoDoctor\\AutoDoctor.csproj|c:\\users\\chris\\music\\projects\\auto-doctor\\autodoctor\\autodoctor\\views\\marketplace\\all.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3BFA9F32-602B-41F4-B925-61698380631F}|AutoDoctor\\AutoDoctor.csproj|solutionrelative:autodoctor\\views\\marketplace\\all.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0565D184-59B8-4A6B-B40B-C7C0567076BB}|AutoDoctor.Web.ViewModels\\AutoDoctor.Web.ViewModels.csproj|g:\\projects\\programming\\auto-doctor\\autodoctor\\autodoctor.web.viewmodels\\marketplace\\offerdetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0565D184-59B8-4A6B-B40B-C7C0567076BB}|AutoDoctor.Web.ViewModels\\AutoDoctor.Web.ViewModels.csproj|solutionrelative:autodoctor.web.viewmodels\\marketplace\\offerdetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B751A690-492D-437C-8F8F-8E75980B0DCF}|AutoDoctor.Data\\AutoDoctor.Data.csproj|c:\\users\\chris\\music\\projects\\auto-doctor\\autodoctor\\autodoctor.data\\repositories\\iofferrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B751A690-492D-437C-8F8F-8E75980B0DCF}|AutoDoctor.Data\\AutoDoctor.Data.csproj|solutionrelative:autodoctor.data\\repositories\\iofferrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3BFA9F32-602B-41F4-B925-61698380631F}|AutoDoctor\\AutoDoctor.csproj|g:\\projects\\programming\\auto-doctor\\autodoctor\\autodoctor\\controllers\\marketplacecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BFA9F32-602B-41F4-B925-61698380631F}|AutoDoctor\\AutoDoctor.csproj|solutionrelative:autodoctor\\controllers\\marketplacecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0565D184-59B8-4A6B-B40B-C7C0567076BB}|AutoDoctor.Web.ViewModels\\AutoDoctor.Web.ViewModels.csproj|c:\\users\\chris\\music\\projects\\auto-doctor\\autodoctor\\autodoctor.web.viewmodels\\marketplace\\alloffersviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B751A690-492D-437C-8F8F-8E75980B0DCF}|AutoDoctor.Data\\AutoDoctor.Data.csproj|g:\\projects\\programming\\auto-doctor\\autodoctor\\autodoctor.data\\services\\offerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B751A690-492D-437C-8F8F-8E75980B0DCF}|AutoDoctor.Data\\AutoDoctor.Data.csproj|solutionrelative:autodoctor.data\\services\\offerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0565D184-59B8-4A6B-B40B-C7C0567076BB}|AutoDoctor.Web.ViewModels\\AutoDoctor.Web.ViewModels.csproj|g:\\projects\\programming\\auto-doctor\\autodoctor\\autodoctor.web.viewmodels\\marketplace\\alloffersviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0565D184-59B8-4A6B-B40B-C7C0567076BB}|AutoDoctor.Web.ViewModels\\AutoDoctor.Web.ViewModels.csproj|solutionrelative:autodoctor.web.viewmodels\\marketplace\\alloffersviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0565D184-59B8-4A6B-B40B-C7C0567076BB}|AutoDoctor.Web.ViewModels\\AutoDoctor.Web.ViewModels.csproj|c:\\users\\chris\\music\\projects\\auto-doctor\\autodoctor\\autodoctor.web.viewmodels\\marketplace\\offerdetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0565D184-59B8-4A6B-B40B-C7C0567076BB}|AutoDoctor.Web.ViewModels\\AutoDoctor.Web.ViewModels.csproj|solutionrelative:autodoctor.web.viewmodels\\marketplace\\offerdetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3BFA9F32-602B-41F4-B925-61698380631F}|AutoDoctor\\AutoDoctor.csproj|g:\\projects\\programming\\auto-doctor\\autodoctor\\autodoctor\\views\\marketplace\\all.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3BFA9F32-602B-41F4-B925-61698380631F}|AutoDoctor\\AutoDoctor.csproj|solutionrelative:autodoctor\\views\\marketplace\\all.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,98 +42,104 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Offer.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Music\\Projects\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data.Models\\Offer.cs",
-              "RelativeDocumentMoniker": "AutoDoctor.Data.Models\\Offer.cs",
-              "ToolTip": "C:\\Users\\chris\\Music\\Projects\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data.Models\\Offer.cs",
-              "RelativeToolTip": "AutoDoctor.Data.Models\\Offer.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwAoAAAAoAAAA",
+              "DocumentIndex": 0,
+              "Title": "Vehicle.cs",
+              "DocumentMoniker": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data.Models\\Vehicle.cs",
+              "RelativeDocumentMoniker": "AutoDoctor.Data.Models\\Vehicle.cs",
+              "ToolTip": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data.Models\\Vehicle.cs",
+              "RelativeToolTip": "AutoDoctor.Data.Models\\Vehicle.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T10:39:51.672Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "OfferDetailsViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Music\\Projects\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Web.ViewModels\\Marketplace\\OfferDetailsViewModel.cs",
-              "RelativeDocumentMoniker": "AutoDoctor.Web.ViewModels\\Marketplace\\OfferDetailsViewModel.cs",
-              "ToolTip": "C:\\Users\\chris\\Music\\Projects\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Web.ViewModels\\Marketplace\\OfferDetailsViewModel.cs",
-              "RelativeToolTip": "AutoDoctor.Web.ViewModels\\Marketplace\\OfferDetailsViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T10:26:19.682Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AllOffersViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Music\\Projects\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Web.ViewModels\\Marketplace\\AllOffersViewModel.cs",
-              "RelativeDocumentMoniker": "AutoDoctor.Web.ViewModels\\Marketplace\\AllOffersViewModel.cs",
-              "ToolTip": "C:\\Users\\chris\\Music\\Projects\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Web.ViewModels\\Marketplace\\AllOffersViewModel.cs",
-              "RelativeToolTip": "AutoDoctor.Web.ViewModels\\Marketplace\\AllOffersViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAUAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T07:15:44.197Z",
+              "WhenOpened": "2024-05-25T12:48:00.828Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "OfferService.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Music\\Projects\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data\\Services\\OfferService.cs",
-              "RelativeDocumentMoniker": "AutoDoctor.Data\\Services\\OfferService.cs",
-              "ToolTip": "C:\\Users\\chris\\Music\\Projects\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data\\Services\\OfferService.cs",
-              "RelativeToolTip": "AutoDoctor.Data\\Services\\OfferService.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAA1wCQAAAAQAAAA",
+              "Title": "Part.cs",
+              "DocumentMoniker": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data.Models\\Part.cs",
+              "RelativeDocumentMoniker": "AutoDoctor.Data.Models\\Part.cs",
+              "ToolTip": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data.Models\\Part.cs",
+              "RelativeToolTip": "AutoDoctor.Data.Models\\Part.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAABMAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T06:54:27.457Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-25T11:05:40.667Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IOfferRepository.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Music\\Projects\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data\\Repositories\\IOfferRepository.cs",
-              "RelativeDocumentMoniker": "AutoDoctor.Data\\Repositories\\IOfferRepository.cs",
-              "ToolTip": "C:\\Users\\chris\\Music\\Projects\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data\\Repositories\\IOfferRepository.cs",
-              "RelativeToolTip": "AutoDoctor.Data\\Repositories\\IOfferRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAgAAAA",
+              "DocumentIndex": 2,
+              "Title": "Offer.cs",
+              "DocumentMoniker": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data.Models\\Offer.cs",
+              "RelativeDocumentMoniker": "AutoDoctor.Data.Models\\Offer.cs",
+              "ToolTip": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data.Models\\Offer.cs",
+              "RelativeToolTip": "AutoDoctor.Data.Models\\Offer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T06:53:49.633Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MarketplaceController.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Music\\Projects\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\Controllers\\MarketplaceController.cs",
-              "RelativeDocumentMoniker": "AutoDoctor\\Controllers\\MarketplaceController.cs",
-              "ToolTip": "C:\\Users\\chris\\Music\\Projects\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\Controllers\\MarketplaceController.cs",
-              "RelativeToolTip": "AutoDoctor\\Controllers\\MarketplaceController.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAowCoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T06:38:32.17Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-23T10:39:51.672Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "OfferDetailsViewModel.cs",
+              "DocumentMoniker": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Web.ViewModels\\Marketplace\\OfferDetailsViewModel.cs",
+              "RelativeDocumentMoniker": "AutoDoctor.Web.ViewModels\\Marketplace\\OfferDetailsViewModel.cs",
+              "ToolTip": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Web.ViewModels\\Marketplace\\OfferDetailsViewModel.cs",
+              "RelativeToolTip": "AutoDoctor.Web.ViewModels\\Marketplace\\OfferDetailsViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T10:26:19.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AllOffersViewModel.cs",
+              "DocumentMoniker": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Web.ViewModels\\Marketplace\\AllOffersViewModel.cs",
+              "RelativeDocumentMoniker": "AutoDoctor.Web.ViewModels\\Marketplace\\AllOffersViewModel.cs",
+              "ToolTip": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Web.ViewModels\\Marketplace\\AllOffersViewModel.cs",
+              "RelativeToolTip": "AutoDoctor.Web.ViewModels\\Marketplace\\AllOffersViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAcAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T07:15:44.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OfferService.cs",
+              "DocumentMoniker": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data\\Services\\OfferService.cs",
+              "RelativeDocumentMoniker": "AutoDoctor.Data\\Services\\OfferService.cs",
+              "ToolTip": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data\\Services\\OfferService.cs",
+              "RelativeToolTip": "AutoDoctor.Data\\Services\\OfferService.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwCEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T06:54:27.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MarketplaceController.cs",
+              "DocumentMoniker": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\Controllers\\MarketplaceController.cs",
+              "RelativeDocumentMoniker": "AutoDoctor\\Controllers\\MarketplaceController.cs",
+              "ToolTip": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\Controllers\\MarketplaceController.cs",
+              "RelativeToolTip": "AutoDoctor\\Controllers\\MarketplaceController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAADwvx4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T06:38:32.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "All.cshtml",
-              "DocumentMoniker": "C:\\Users\\chris\\Music\\Projects\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\Views\\Marketplace\\All.cshtml",
+              "DocumentMoniker": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\Views\\Marketplace\\All.cshtml",
               "RelativeDocumentMoniker": "AutoDoctor\\Views\\Marketplace\\All.cshtml",
-              "ToolTip": "C:\\Users\\chris\\Music\\Projects\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\Views\\Marketplace\\All.cshtml",
+              "ToolTip": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\Views\\Marketplace\\All.cshtml",
               "RelativeToolTip": "AutoDoctor\\Views\\Marketplace\\All.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-22T08:38:36.001Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T08:38:36.001Z"
             }
           ]
         }

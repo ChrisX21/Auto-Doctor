@@ -20,7 +20,7 @@ namespace AutoDoctor.Controllers
                 .GetAllOffers()
                 .Select(offer => new AllOffersViewModel
                 {
-                    OfferId = offer.Id,
+                    Id = offer.Id,
                     ImageUrl = offer.ImageUrl,
                     Title = offer.Title,
                     Price = offer.Price,
@@ -29,19 +29,25 @@ namespace AutoDoctor.Controllers
                     User = offer.User
                 });
 
-            var model = new OfferIndexViewModel
-            {
-                AllOffers = offers
-            };
-
-            return View(model);
+            return View(offers);
         }
         
-        public IActionResult Details(Guid Id)
+        public ActionResult Details(Guid Id)
         {
             var offer = _offerRepository.GetOfferById(Id);
 
-            return View(offer);
+            var viewModel = new OfferDetailsViewModel
+            {
+                Id = offer.Id,
+                ImageUrl = offer.ImageUrl,
+                Title = offer.Title,
+                Price = offer.Price,
+                Views = offer.Views,
+                Likes = offer.Likes,
+                User = offer.User
+            };
+
+            return View(viewModel);
         }
 
         public IActionResult Error()

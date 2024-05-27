@@ -30,23 +30,7 @@ namespace AutoDoctor.Data.Services
 
         public IEnumerable<Offer> GetAllOffers() => _context.Offers;
 
-        public Task GetOfferById(Guid OfferId)
-        {
-            return _context.Offers.Where(offer => OfferId == offer.Id).Select(offer => new Offer
-            {
-                Id = offer.Id,
-                ImageUrl = offer.ImageUrl,
-                CreatedAt = offer.CreatedAt,
-                Title = offer.Title,
-                Description = offer.Description,
-                Price = offer.Price,
-                Views = offer.Views,
-                Likes = offer.Likes,
-                User = offer.User,
-                Vehicles = offer.Vehicles
-
-            }).FirstOrDefaultAsync();
-        }
+        public Offer GetOfferById(Guid OfferId) => _context.Offers.FirstOrDefault(offer => offer.Id == OfferId);
 
         public Task UpdateOffer(Guid OfferId)
         {

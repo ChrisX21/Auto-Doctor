@@ -5,7 +5,7 @@ namespace AutoDoctor.Web.ViewModels.Marketplace
 {
     public class AllOffersViewModel
     {
-        public Guid OfferId { get; set; } 
+        public Guid Id { get; set; } 
         public string ImageUrl { get; set; } = null!;
         public string Title { get; set; } = null!;
         public int Views { get; set; } 
