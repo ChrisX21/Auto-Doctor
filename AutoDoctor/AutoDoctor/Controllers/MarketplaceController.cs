@@ -1,6 +1,7 @@
 ﻿using AutoDoctor.Data.Models;
 using AutoDoctor.Data.Repositories;
 using AutoDoctor.Web.ViewModels.Marketplace;
+using AutoDoctor.Web.ViewModels.Part;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AutoDoctor.Controllers
@@ -21,12 +22,11 @@ namespace AutoDoctor.Controllers
                 .Select(offer => new AllOffersViewModel
                 {
                     Id = offer.Id,
-                    ImageUrl = offer.ImageUrl,
                     Title = offer.Title,
                     Price = offer.Price,
                     Views = offer.Views,
                     Likes = offer.Likes,
-                    User = offer.User
+                    User = offer.User,
                 });
 
             return View(offers);
@@ -39,7 +39,6 @@ namespace AutoDoctor.Controllers
             var viewModel = new OfferDetailsViewModel
             {
                 Id = offer.Id,
-                ImageUrl = offer.ImageUrl,
                 Title = offer.Title,
                 Price = offer.Price,
                 Views = offer.Views,
