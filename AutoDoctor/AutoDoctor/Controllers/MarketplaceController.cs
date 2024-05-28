@@ -17,36 +17,36 @@ namespace AutoDoctor.Controllers
 
         public IActionResult All()
         {
-            IEnumerable<AllOffersViewModel> offers = _offerRepository
-                .GetAllOffers()
-                .Select(offer => new AllOffersViewModel
-                {
-                    Id = offer.Id,
-                    Title = offer.Title,
-                    Price = offer.Price,
-                    Views = offer.Views,
-                    Likes = offer.Likes,
-                    User = offer.User,
-                });
+            //IEnumerable<AllOffersViewModel> offers = _offerRepository
+            //    .GetAllOffers()
+            //    .Select(offer => new AllOffersViewModel
+            //    {
+            //        Id = offer.Id,
+            //        Title = offer.Title,
+            //        Price = offer.Price,
+            //        Views = offer.Views,
+            //        Likes = offer.Likes,
+            //        User = offer.User,
+            //    });
 
-            return View(offers);
+            return View();
         }
         
         public ActionResult Details(Guid Id)
         {
             var offer = _offerRepository.GetOfferById(Id);
 
-            var viewModel = new OfferDetailsViewModel
-            {
-                Id = offer.Id,
-                Title = offer.Title,
-                Price = offer.Price,
-                Views = offer.Views,
-                Likes = offer.Likes,
-                User = offer.User
-            };
+            //var viewModel = new OfferDetailsViewModel
+            //{
+            //    Id = offer.Id,
+            //    Title = offer.Title,
+            //    Price = offer.Price,
+            //    Views = offer.Views,
+            //    Likes = offer.Likes,
+            //    User = offer.User
+            //};
 
-            return View(viewModel);
+            return View();
         }
 
         public IActionResult Error()

@@ -12,13 +12,15 @@ namespace AutoDoctor.Data.Models
     {
         [Key]
         public Guid Id { get; set; }
+        [Required, MaxLength(50)]
         public string Name { get; set; } = null!;
-        [ForeignKey(nameof(User)), Required]
-        public Guid UserId { get; set; }
-        [ForeignKey(nameof(Vehicle)), Required]
-        public Guid VehicleId { get; set; } 
         public string ImageUrl { get; set; } = null!;
-        public Vehicle Vehicle { get; set; } = null!;
+        [Required, Column(TypeName = "money")]
+        public decimal Price { get; set; } = 0;
+        
+        [ForeignKey(nameof(User)), Required]
+        public string UserId { get; set; } = null!;
         public ApplicationUser User { get; set; } = null!;
+        public ICollection<PartVehicle> PartVehicles { get; set; } = new List<PartVehicle>();
     }
 }
