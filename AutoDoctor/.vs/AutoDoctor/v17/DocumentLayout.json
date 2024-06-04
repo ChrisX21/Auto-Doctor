@@ -1,17 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\chris\\Music\\Projects\\Auto-Doctor\\AutoDoctor\\",
+  "WorkspaceRootPath": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B751A690-492D-437C-8F8F-8E75980B0DCF}|AutoDoctor.Data\\AutoDoctor.Data.csproj|c:\\users\\chris\\music\\projects\\auto-doctor\\autodoctor\\autodoctor.data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data\\Migrations\\20240604200340_KudeETomaaa1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AutoDoctor.Data\\Migrations\\20240604200340_KudeETomaaa1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B751A690-492D-437C-8F8F-8E75980B0DCF}|AutoDoctor.Data\\AutoDoctor.Data.csproj|g:\\projects\\programming\\auto-doctor\\autodoctor\\autodoctor.data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B751A690-492D-437C-8F8F-8E75980B0DCF}|AutoDoctor.Data\\AutoDoctor.Data.csproj|solutionrelative:autodoctor.data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26441245-1738-4CCE-BC11-30D31FAF1D9F}|AutoDoctor.Data.Models\\AutoDoctor.Data.Models.csproj|c:\\users\\chris\\music\\projects\\auto-doctor\\autodoctor\\autodoctor.data.models\\offer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{26441245-1738-4CCE-BC11-30D31FAF1D9F}|AutoDoctor.Data.Models\\AutoDoctor.Data.Models.csproj|g:\\projects\\programming\\auto-doctor\\autodoctor\\autodoctor.data.models\\offer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26441245-1738-4CCE-BC11-30D31FAF1D9F}|AutoDoctor.Data.Models\\AutoDoctor.Data.Models.csproj|solutionrelative:autodoctor.data.models\\offer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26441245-1738-4CCE-BC11-30D31FAF1D9F}|AutoDoctor.Data.Models\\AutoDoctor.Data.Models.csproj|c:\\users\\chris\\music\\projects\\auto-doctor\\autodoctor\\autodoctor.data.models\\part.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{26441245-1738-4CCE-BC11-30D31FAF1D9F}|AutoDoctor.Data.Models\\AutoDoctor.Data.Models.csproj|g:\\projects\\programming\\auto-doctor\\autodoctor\\autodoctor.data.models\\part.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26441245-1738-4CCE-BC11-30D31FAF1D9F}|AutoDoctor.Data.Models\\AutoDoctor.Data.Models.csproj|solutionrelative:autodoctor.data.models\\part.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -27,40 +31,52 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "20240604200340_KudeETomaaa1.cs",
+              "DocumentMoniker": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data\\Migrations\\20240604200340_KudeETomaaa1.cs",
+              "RelativeDocumentMoniker": "AutoDoctor.Data\\Migrations\\20240604200340_KudeETomaaa1.cs",
+              "ToolTip": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data\\Migrations\\20240604200340_KudeETomaaa1.cs",
+              "RelativeToolTip": "AutoDoctor.Data\\Migrations\\20240604200340_KudeETomaaa1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T20:03:40.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Music\\Projects\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data\\ApplicationDbContext.cs",
+              "DocumentMoniker": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "AutoDoctor.Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\chris\\Music\\Projects\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data\\ApplicationDbContext.cs",
+              "ToolTip": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "AutoDoctor.Data\\ApplicationDbContext.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAUwEQAAAAzAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAA2wCIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-28T10:40:21.025Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Part.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Music\\Projects\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data.Models\\Part.cs",
+              "DocumentMoniker": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data.Models\\Part.cs",
               "RelativeDocumentMoniker": "AutoDoctor.Data.Models\\Part.cs",
-              "ToolTip": "C:\\Users\\chris\\Music\\Projects\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data.Models\\Part.cs",
+              "ToolTip": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data.Models\\Part.cs",
               "RelativeToolTip": "AutoDoctor.Data.Models\\Part.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAcwA8AAAAxAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAoAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-28T12:02:12.438Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Offer.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Music\\Projects\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data.Models\\Offer.cs",
+              "DocumentMoniker": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data.Models\\Offer.cs",
               "RelativeDocumentMoniker": "AutoDoctor.Data.Models\\Offer.cs",
-              "ToolTip": "C:\\Users\\chris\\Music\\Projects\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data.Models\\Offer.cs",
+              "ToolTip": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data.Models\\Offer.cs",
               "RelativeToolTip": "AutoDoctor.Data.Models\\Offer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T10:39:51.672Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-23T10:39:51.672Z"
             }
           ]
         }

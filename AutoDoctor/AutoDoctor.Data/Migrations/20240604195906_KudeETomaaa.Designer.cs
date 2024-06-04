@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AutoDoctor.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240528113141_NewModelsWithRelations")]
-    partial class NewModelsWithRelations
+    [Migration("20240604195906_KudeETomaaa")]
+    partial class KudeETomaaa
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -377,9 +377,9 @@ namespace AutoDoctor.Data.Migrations
                         .HasForeignKey("ApplicationUserId");
 
                     b.HasOne("AutoDoctor.Data.Models.Part", "Part")
-                        .WithMany()
+                        .WithMany("Offers")
                         .HasForeignKey("PartId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Part");
@@ -390,7 +390,7 @@ namespace AutoDoctor.Data.Migrations
                     b.HasOne("AutoDoctor.Data.Models.ApplicationUser", "User")
                         .WithMany("Orders")
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("User");
@@ -401,13 +401,13 @@ namespace AutoDoctor.Data.Migrations
                     b.HasOne("AutoDoctor.Data.Models.Offer", "Offer")
                         .WithMany("OrderOffers")
                         .HasForeignKey("OfferId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("AutoDoctor.Data.Models.Order", "Order")
                         .WithMany("OrderOffers")
                         .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Offer");
@@ -431,7 +431,7 @@ namespace AutoDoctor.Data.Migrations
                     b.HasOne("AutoDoctor.Data.Models.Part", "Part")
                         .WithMany("PartVehicles")
                         .HasForeignKey("PartId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("AutoDoctor.Data.Models.Vehicle", "Vehicle")
@@ -530,6 +530,8 @@ namespace AutoDoctor.Data.Migrations
 
             modelBuilder.Entity("AutoDoctor.Data.Models.Part", b =>
                 {
+                    b.Navigation("Offers");
+
                     b.Navigation("PartVehicles");
                 });
 

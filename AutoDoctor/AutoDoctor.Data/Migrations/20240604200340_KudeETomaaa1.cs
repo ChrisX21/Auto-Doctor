@@ -5,7 +5,7 @@
 namespace AutoDoctor.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class FixedRelations4 : Migration
+    public partial class KudeETomaaa1 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -22,10 +22,6 @@ namespace AutoDoctor.Data.Migrations
                 name: "FK_Orders_AspNetUsers_UserId",
                 table: "Orders");
 
-            migrationBuilder.DropForeignKey(
-                name: "FK_partVehicles_Parts_PartId",
-                table: "partVehicles");
-
             migrationBuilder.AddForeignKey(
                 name: "FK_OrderOffers_Offers_OfferId",
                 table: "OrderOffers",
@@ -40,21 +36,13 @@ namespace AutoDoctor.Data.Migrations
                 column: "OrderId",
                 principalTable: "Orders",
                 principalColumn: "Id",
-                onDelete: ReferentialAction.Restrict);
+                onDelete: ReferentialAction.Cascade);
 
             migrationBuilder.AddForeignKey(
                 name: "FK_Orders_AspNetUsers_UserId",
                 table: "Orders",
                 column: "UserId",
                 principalTable: "AspNetUsers",
-                principalColumn: "Id",
-                onDelete: ReferentialAction.Restrict);
-
-            migrationBuilder.AddForeignKey(
-                name: "FK_partVehicles_Parts_PartId",
-                table: "partVehicles",
-                column: "PartId",
-                principalTable: "Parts",
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Cascade);
         }
@@ -74,10 +62,6 @@ namespace AutoDoctor.Data.Migrations
                 name: "FK_Orders_AspNetUsers_UserId",
                 table: "Orders");
 
-            migrationBuilder.DropForeignKey(
-                name: "FK_partVehicles_Parts_PartId",
-                table: "partVehicles");
-
             migrationBuilder.AddForeignKey(
                 name: "FK_OrderOffers_Offers_OfferId",
                 table: "OrderOffers",
@@ -92,21 +76,13 @@ namespace AutoDoctor.Data.Migrations
                 column: "OrderId",
                 principalTable: "Orders",
                 principalColumn: "Id",
-                onDelete: ReferentialAction.Cascade);
+                onDelete: ReferentialAction.Restrict);
 
             migrationBuilder.AddForeignKey(
                 name: "FK_Orders_AspNetUsers_UserId",
                 table: "Orders",
                 column: "UserId",
                 principalTable: "AspNetUsers",
-                principalColumn: "Id",
-                onDelete: ReferentialAction.Cascade);
-
-            migrationBuilder.AddForeignKey(
-                name: "FK_partVehicles_Parts_PartId",
-                table: "partVehicles",
-                column: "PartId",
-                principalTable: "Parts",
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Restrict);
         }

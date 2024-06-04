@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Qdb+wUEdCVU=",
+  "dgSpecHash": "Wo7UaY0zqUc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\chris\\Music\\Projects\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data\\AutoDoctor.Data.csproj",
+  "projectFilePath": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data\\AutoDoctor.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chris\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

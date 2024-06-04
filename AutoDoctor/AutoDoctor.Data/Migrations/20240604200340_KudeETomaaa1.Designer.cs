@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AutoDoctor.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240530063850_FixedRelations")]
-    partial class FixedRelations
+    [Migration("20240604200340_KudeETomaaa1")]
+    partial class KudeETomaaa1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -109,8 +109,7 @@ namespace AutoDoctor.Data.Migrations
 
                     b.HasIndex("ApplicationUserId");
 
-                    b.HasIndex("PartId")
-                        .IsUnique();
+                    b.HasIndex("PartId");
 
                     b.ToTable("Offers");
                 });
@@ -171,9 +170,6 @@ namespace AutoDoctor.Data.Migrations
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
-
-                    b.Property<Guid?>("OfferId")
-                        .HasColumnType("uniqueidentifier");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("money");
@@ -381,8 +377,8 @@ namespace AutoDoctor.Data.Migrations
                         .HasForeignKey("ApplicationUserId");
 
                     b.HasOne("AutoDoctor.Data.Models.Part", "Part")
-                        .WithOne("Offer")
-                        .HasForeignKey("AutoDoctor.Data.Models.Offer", "PartId")
+                        .WithMany("Offers")
+                        .HasForeignKey("PartId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
@@ -435,7 +431,7 @@ namespace AutoDoctor.Data.Migrations
                     b.HasOne("AutoDoctor.Data.Models.Part", "Part")
                         .WithMany("PartVehicles")
                         .HasForeignKey("PartId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("AutoDoctor.Data.Models.Vehicle", "Vehicle")
@@ -534,8 +530,7 @@ namespace AutoDoctor.Data.Migrations
 
             modelBuilder.Entity("AutoDoctor.Data.Models.Part", b =>
                 {
-                    b.Navigation("Offer")
-                        .IsRequired();
+                    b.Navigation("Offers");
 
                     b.Navigation("PartVehicles");
                 });
