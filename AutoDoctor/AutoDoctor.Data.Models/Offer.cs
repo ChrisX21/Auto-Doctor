@@ -14,6 +14,7 @@ namespace AutoDoctor.Data.Models
         [Key]
         public Guid Id { get; set; } = new Guid();
         public DateTime CreatedAt { get; set; }
+        public string Description { get; set; } = null!;
         [ForeignKey(nameof(Part))]
         public Guid PartId { get; set; }
         public Part Part { get; set; } = null!;

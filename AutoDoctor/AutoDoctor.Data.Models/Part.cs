@@ -15,13 +15,12 @@ namespace AutoDoctor.Data.Models
         [Required, MaxLength(50)]
         public string Name { get; set; } = null!;
         public string ImageUrl { get; set; } = null!;
+        
         [Required, Column(TypeName = "money")]
         public decimal Price { get; set; } = 0;
-        
         [ForeignKey(nameof(User)), Required]
         public string UserId { get; set; } = null!;
         public ApplicationUser User { get; set; } = null!;
-
         public ICollection<Offer> Offers { get; set; } = new HashSet<Offer>();
         public ICollection<PartVehicle> PartVehicles { get; set; } = new List<PartVehicle>();
     }

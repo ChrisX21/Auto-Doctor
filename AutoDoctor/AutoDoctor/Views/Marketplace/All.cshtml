@@ -1,13 +1,30 @@
-﻿
-<h1>Marketplace</h1>
+﻿@model IEnumerable<AutoDoctor.Web.ViewModels.Marketplace.AllOffersViewModel>
 
-@foreach (var offer in Model.AllOffers)
-{
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">@offer.Title</h5>
-           @*  <a href="@Url.Action("Details", "Marketplace", new { id = offer.Id })" class="btn btn-primary">Details</a> *@
-        </div>
-    </div>
+@{
+    ViewData["Title"] = "Marketplace";
 }
-```
+
+<h2>All Offers</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Description</th>
+            <th>Part Name</th>
+            <th>Price</th>
+            <th>User</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var offer in Model)
+        {
+            <tr>
+                <td>@offer.Description</td>
+                <td>@offer.Part.Name</td>
+                <td>@offer.Part.Price</td>
+                <td>@offer.Part.User.UserName</td> 
+            </tr>
+        }
+
+    </tbody>
+</table>

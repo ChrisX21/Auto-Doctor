@@ -17,34 +17,28 @@ namespace AutoDoctor.Controllers
 
         public IActionResult All()
         {
-            //IEnumerable<AllOffersViewModel> offers = _offerRepository
-            //    .GetAllOffers()
-            //    .Select(offer => new AllOffersViewModel
-            //    {
-            //        Id = offer.Id,
-            //        Title = offer.Title,
-            //        Price = offer.Price,
-            //        Views = offer.Views,
-            //        Likes = offer.Likes,
-            //        User = offer.User,
-            //    });
+            var offers = _offerRepository.GetAllOffers()
+                .Select(o => new AllOffersViewModel
+                {
+                    OfferId = o.Id,
+                    Description = o.Description,
+                    Part = new PartViewModel
+                    {
+                        Id = o.Part.Id,
+                        Name = o.Part.Name,
+                        ImageUrl = o.Part.ImageUrl,
+                        Price = o.Part.Price,
+                        User = o.Part.User
+                    }
+                })
+                .ToList();
 
-            return View();
+            return View(offers);
         }
-        
+
         public ActionResult Details(Guid Id)
         {
             var offer = _offerRepository.GetOfferById(Id);
-
-            //var viewModel = new OfferDetailsViewModel
-            //{
-            //    Id = offer.Id,
-            //    Title = offer.Title,
-            //    Price = offer.Price,
-            //    Views = offer.Views,
-            //    Likes = offer.Likes,
-            //    User = offer.User
-            //};
 
             return View();
         }

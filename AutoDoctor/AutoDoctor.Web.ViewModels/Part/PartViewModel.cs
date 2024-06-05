@@ -7,6 +7,7 @@ namespace AutoDoctor.Web.ViewModels.Part
         public Guid Id { get; set; } 
         public string Name { get; set; } = null!;
         public string ImageUrl { get; set; } = null!;
-        public ApplicationUser Manufacturer { get; set; } = null!;
+        public decimal Price { get; set; } = 0;
+        public ApplicationUser User { get; set; } = null!;
     }
 }
