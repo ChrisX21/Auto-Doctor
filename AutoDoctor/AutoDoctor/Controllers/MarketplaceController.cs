@@ -9,9 +9,12 @@ namespace AutoDoctor.Controllers
     public class MarketplaceController : Controller
     {
         private readonly IOfferRepository _offerRepository;
+        private readonly IVehicleRepository _vehicleRepository;
+        private readonly ApplicationUser _user;
 
-        public MarketplaceController(IOfferRepository offerRepository)
+        public MarketplaceController(IOfferRepository offerRepository, IVehicleRepository vehicleRepository)
         {
+            _vehicleRepository = vehicleRepository;
             _offerRepository = offerRepository;
         }
 

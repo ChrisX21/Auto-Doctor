@@ -1,4 +1,5 @@
-﻿using AutoDoctor.Data.Repositories;
+﻿using AutoDoctor.Data.Models;
+using AutoDoctor.Data.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,22 +16,19 @@ namespace AutoDoctor.Data.Services
             _context = context;
         }
 
-        public void AddVehicle()
+        public void AddVehicle(Vehicle vehicle)
         {
             throw new NotImplementedException();
         }
 
-        public void DeleteVehicle()
+        public void DeleteVehicle(Guid id)
         {
             throw new NotImplementedException();
         }
 
-        public void GetVehicle()
-        {
-            throw new NotImplementedException();
-        }
+        public Vehicle GetVehicle(Guid id) => _context.Vehicles.FirstOrDefault(v => v.Id == id);
 
-        public void UpdateVehicle()
+        public void UpdateVehicle(Guid id)
         {
             throw new NotImplementedException();
         }

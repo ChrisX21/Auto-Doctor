@@ -8,7 +8,6 @@
 <table class="table">
     <thead>
         <tr>
-            <th>Description</th>
             <th>Part Name</th>
             <th>Price</th>
             <th>User</th>
@@ -19,7 +18,6 @@
         @foreach (var offer in Model)
         {
             <tr>
-                <td>@offer.Description</td>
                 <td>@offer.Part.Name</td>
                 <td>@offer.Part.Price</td>
                 <td>@offer.Part.User.UserName</td> 
