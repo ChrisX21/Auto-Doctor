@@ -18,9 +18,18 @@ namespace AutoDoctor.Data.Services
             _context = context;
         }
 
-        public Task AddOffer(Offer offer)
+        public async Task AddOffer(Offer offer)
         {
-            throw new NotImplementedException();
+            Offer newOffer = new Offer
+            {
+                Id = Guid.NewGuid(),
+                Description = offer.Description,
+                Part = offer.Part,
+                User = offer.User
+            };
+
+            await _context.Offers.AddAsync(newOffer);
+            await _context.SaveChangesAsync();
         }
 
         public Task DeleteOffer(Guid OfferId)

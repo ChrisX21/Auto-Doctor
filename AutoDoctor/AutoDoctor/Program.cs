@@ -25,6 +25,8 @@ namespace AutoDoctor
                 .AddDefaultUI();
             
             builder.Services.AddScoped<IOfferRepository, OfferService>();
+            builder.Services.AddScoped<IVehicleRepository, VehicleService>();
+
 
             builder.Services.Configure<IdentityOptions>(options =>
             {

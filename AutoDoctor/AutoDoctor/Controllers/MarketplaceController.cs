@@ -25,13 +25,14 @@ namespace AutoDoctor.Controllers
                 {
                     OfferId = o.Id,
                     Description = o.Description,
+                    User = o.User,
                     Part = new PartViewModel
                     {
                         Id = o.Part.Id,
                         Name = o.Part.Name,
                         ImageUrl = o.Part.ImageUrl,
                         Price = o.Part.Price,
-                        User = o.Part.User
+                        Manufacturer = o.Part.User
                     }
                 })
                 .ToList();

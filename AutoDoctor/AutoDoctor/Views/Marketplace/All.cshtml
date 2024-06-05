@@ -4,13 +4,14 @@
     ViewData["Title"] = "Marketplace";
 }
 
-<h2>All Offers</h2>
+<h2 class="text-center mb-4">All Offers</h2>
 <table class="table">
     <thead>
         <tr>
+            <th></th>
             <th>Part Name</th>
             <th>Price</th>
-            <th>User</th>
+            <th>Manufacturer</th>
         </tr>
     </thead>
     <tbody>
@@ -18,9 +19,10 @@
         @foreach (var offer in Model)
         {
             <tr>
+                <td><img src="@Html.Raw(offer.Part.ImageUrl)" alt="Product image" /></td>
                 <td>@offer.Part.Name</td>
                 <td>@offer.Part.Price</td>
-                <td>@offer.Part.User.UserName</td> 
+                <td>@offer.Part.Manufacturer.UserName</td> 
             </tr>
         }
 
