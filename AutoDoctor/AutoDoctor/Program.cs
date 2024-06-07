@@ -26,6 +26,7 @@ namespace AutoDoctor
             
             builder.Services.AddScoped<IOfferRepository, OfferService>();
 
+            builder.Services.AddScoped<Seeder>();
 
             builder.Services.Configure<IdentityOptions>(options =>
             {
@@ -59,7 +60,10 @@ namespace AutoDoctor
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
+
+            
 
             app.MapControllerRoute(
                 name: "default",
