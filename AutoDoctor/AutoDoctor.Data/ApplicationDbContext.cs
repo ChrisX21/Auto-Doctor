@@ -9,9 +9,7 @@ namespace AutoDoctor.Data
     {
         public DbSet<Offer> Offers { get; set; } 
         public DbSet<Order> Orders { get; set; } 
-        public DbSet<Vehicle> Vehicles { get; set; }
         public DbSet<Part> Parts { get; set; }
-        public DbSet<PartVehicle> partVehicles { get; set; }
         public DbSet<OrderOffer> OrderOffers { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
@@ -21,9 +19,6 @@ namespace AutoDoctor.Data
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
-            builder.Entity<PartVehicle>()
-               .HasKey(pv => new { pv.PartId, pv.VehicleId });
-            
             builder.Entity<OrderOffer>()
                 .HasKey(oo => new { oo.OrderId, oo.OfferId });
 
@@ -33,14 +28,13 @@ namespace AutoDoctor.Data
                 .HasForeignKey(o => o.PartId)
                 .OnDelete(DeleteBehavior.Restrict);
 
-            builder.Entity<PartVehicle>()
-                .HasOne(pv => pv.Part)
-                .WithMany(p => p.PartVehicles)
-                .HasForeignKey(pv => pv.PartId)
+            builder.Entity<Offer>()
+                .HasOne(o => o.User)
+                .WithMany(u => u.Offers)
+                .HasForeignKey(o => o.UserId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             base.OnModelCreating(builder);
         }
-
     }
 }

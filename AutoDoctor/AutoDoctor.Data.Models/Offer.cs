@@ -17,9 +17,9 @@ namespace AutoDoctor.Data.Models
         public string Description { get; set; } = null!;
         [ForeignKey(nameof(Part))]
         public Guid PartId { get; set; }
-        public Part Part { get; set; } = null!;
         [ForeignKey(nameof(User))]
         public string UserId { get; set; } = null!;
+        public Part Part { get; set; } = null!;
         public ApplicationUser User { get; set; } = null!;
         public ICollection<OrderOffer> OrderOffers { get; set; } = new List<OrderOffer>();
     }

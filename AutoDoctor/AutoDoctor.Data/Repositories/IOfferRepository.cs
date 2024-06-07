@@ -8,8 +8,8 @@ namespace AutoDoctor.Data.Repositories
         public IEnumerable<Offer> GetAllOffers();
         public Offer GetOfferById(Guid OfferId);
         public Task AddOffer(Offer offer);
-        public Task UpdateOffer(Guid OfferId);
-        public Task DeleteOffer(Guid OfferId);
+        public void UpdateOffer(Guid OfferId);
+        public void DeleteOffer(Guid OfferId);
 
     }
 }

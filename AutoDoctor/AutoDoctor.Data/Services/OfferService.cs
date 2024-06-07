@@ -1,18 +1,17 @@
-﻿using AutoDoctor.Data.Repositories;
-using System.Collections;
+﻿using AutoDoctor.Data.Models;
+using AutoDoctor.Data.Repositories;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using AutoDoctor.Data.Models;
 
 namespace AutoDoctor.Data.Services
 {
     public class OfferService : IOfferRepository
     {
         private readonly ApplicationDbContext _context;
+
         public OfferService(ApplicationDbContext context)
         {
             _context = context;
@@ -32,18 +31,26 @@ namespace AutoDoctor.Data.Services
             await _context.SaveChangesAsync();
         }
 
-        public Task DeleteOffer(Guid OfferId)
+        public void DeleteOffer(Guid offerId)
         {
-            throw new NotImplementedException();
+            _context.Remove(GetOfferById(offerId));
+            _context.SaveChanges();
         }
 
-        public IEnumerable<Offer> GetAllOffers() => _context.Offers;
-
-        public Offer GetOfferById(Guid OfferId) => _context.Offers.FirstOrDefault(offer => offer.Id == OfferId);
-
-        public Task UpdateOffer(Guid OfferId)
+        public IEnumerable<Offer> GetAllOffers()
         {
-            throw new NotImplementedException();
+            return _context.Offers.Include(o => o.Part).Include(o => o.User);
+        }
+
+        public Offer GetOfferById(Guid offerId)
+        {
+            return _context.Offers.Include(o => o.Part).Include(o => o.User).FirstOrDefault(offer => offer.Id == offerId);
+        }
+
+        public void UpdateOffer(Guid offerId)
+        {
+            _context.Offers.Update(GetOfferById(offerId));
+            _context.SaveChanges();
         }
     }
 }

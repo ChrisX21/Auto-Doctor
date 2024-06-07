@@ -1,6 +1,5 @@
 ﻿using AutoDoctor.Data.Models;
 using AutoDoctor.Web.ViewModels.Part;
-using AutoDoctor.Web.ViewModels.Vehicle;
 
 namespace AutoDoctor.Web.ViewModels.Marketplace
 {

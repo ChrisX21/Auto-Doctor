@@ -93,9 +93,6 @@ namespace AutoDoctor.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("ApplicationUserId")
-                        .HasColumnType("nvarchar(450)");
-
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
@@ -106,11 +103,15 @@ namespace AutoDoctor.Data.Migrations
                     b.Property<Guid>("PartId")
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
                     b.HasKey("Id");
 
-                    b.HasIndex("ApplicationUserId");
-
                     b.HasIndex("PartId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Offers");
                 });
@@ -184,58 +185,6 @@ namespace AutoDoctor.Data.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Parts");
-                });
-
-            modelBuilder.Entity("AutoDoctor.Data.Models.PartVehicle", b =>
-                {
-                    b.Property<Guid>("PartId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("VehicleId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("PartId", "VehicleId");
-
-                    b.HasIndex("VehicleId");
-
-                    b.ToTable("partVehicles");
-                });
-
-            modelBuilder.Entity("AutoDoctor.Data.Models.Vehicle", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Engine")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FuelType")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Make")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Model")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("Year")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Vehicles");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -373,17 +322,21 @@ namespace AutoDoctor.Data.Migrations
 
             modelBuilder.Entity("AutoDoctor.Data.Models.Offer", b =>
                 {
-                    b.HasOne("AutoDoctor.Data.Models.ApplicationUser", null)
-                        .WithMany("Offers")
-                        .HasForeignKey("ApplicationUserId");
-
                     b.HasOne("AutoDoctor.Data.Models.Part", "Part")
                         .WithMany("Offers")
                         .HasForeignKey("PartId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
+                    b.HasOne("AutoDoctor.Data.Models.ApplicationUser", "User")
+                        .WithMany("Offers")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
                     b.Navigation("Part");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("AutoDoctor.Data.Models.Order", b =>
@@ -420,36 +373,6 @@ namespace AutoDoctor.Data.Migrations
                 {
                     b.HasOne("AutoDoctor.Data.Models.ApplicationUser", "User")
                         .WithMany("Parts")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("AutoDoctor.Data.Models.PartVehicle", b =>
-                {
-                    b.HasOne("AutoDoctor.Data.Models.Part", "Part")
-                        .WithMany("PartVehicles")
-                        .HasForeignKey("PartId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("AutoDoctor.Data.Models.Vehicle", "Vehicle")
-                        .WithMany("PartVehicles")
-                        .HasForeignKey("VehicleId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Part");
-
-                    b.Navigation("Vehicle");
-                });
-
-            modelBuilder.Entity("AutoDoctor.Data.Models.Vehicle", b =>
-                {
-                    b.HasOne("AutoDoctor.Data.Models.ApplicationUser", "User")
-                        .WithMany("Vehicles")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -515,8 +438,6 @@ namespace AutoDoctor.Data.Migrations
                     b.Navigation("Orders");
 
                     b.Navigation("Parts");
-
-                    b.Navigation("Vehicles");
                 });
 
             modelBuilder.Entity("AutoDoctor.Data.Models.Offer", b =>
@@ -532,13 +453,6 @@ namespace AutoDoctor.Data.Migrations
             modelBuilder.Entity("AutoDoctor.Data.Models.Part", b =>
                 {
                     b.Navigation("Offers");
-
-                    b.Navigation("PartVehicles");
-                });
-
-            modelBuilder.Entity("AutoDoctor.Data.Models.Vehicle", b =>
-                {
-                    b.Navigation("PartVehicles");
                 });
 #pragma warning restore 612, 618
         }

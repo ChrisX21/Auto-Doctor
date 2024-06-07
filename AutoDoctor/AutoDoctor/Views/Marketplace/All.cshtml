@@ -5,26 +5,23 @@
 }
 
 <h2 class="text-center mb-4">All Offers</h2>
-<table class="table">
-    <thead>
-        <tr>
-            <th></th>
-            <th>Part Name</th>
-            <th>Price</th>
-            <th>Manufacturer</th>
-        </tr>
-    </thead>
-    <tbody>
 
-        @foreach (var offer in Model)
-        {
-            <tr>
-                <td><img src="@Html.Raw(offer.Part.ImageUrl)" alt="Product image" /></td>
-                <td>@offer.Part.Name</td>
-                <td>@offer.Part.Price</td>
-                <td>@offer.Part.Manufacturer.UserName</td> 
-            </tr>
-        }
-
-    </tbody>
-</table>
+<div class="row">
+    @foreach (var offer in Model)
+    {
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="@Html.Raw(offer.Part.ImageUrl)" class="card-img-top" alt="Product image">
+                <div class="card-body">
+                    <h5 class="card-title">@offer.Part.Name</h5>
+                    <p class="card-text">Price: @offer.Part.Price</p>
+                    <p class="card-text">Manufacturer: @offer.Part.Manufacturer.UserName</p>
+                    <div class="d-flex justify-content-between">
+                        <a href="@Url.Action("Edit", "Marketplace", new { id = offer.Part.Id })" class="btn btn-primary">Edit</a>
+                        <a href="@Url.Action("Delete", "Marketplace", new { id = offer.Part.Id })" class="btn btn-danger">Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
