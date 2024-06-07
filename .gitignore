@@ -214,6 +214,9 @@ csx/
 ecf/
 rcf/
 
+.vs/
+.vs/AutoDoctor
+
 # Windows Store app package directories and files
 AppPackages/
 BundleArtifacts/
