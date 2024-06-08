@@ -11,7 +11,9 @@
     {
         <div class="col-md-4 mb-4">
             <div class="card">
-                <img src="@Html.Raw(offer.Part.ImageUrl)" class="card-img-top" alt="Product image">
+                <a href="@Url.Action("Details", "Marketplace", new { id = offer.OfferId })">
+                    <img src="@Html.Raw(offer.Part.ImageUrl)" class="card-img-top" alt="Product image">
+                </a>
                 <div class="card-body">
                     <h5 class="card-title">@offer.Part.Name</h5>
                     <p class="card-text">Price: @offer.Part.Price</p>

@@ -30,14 +30,7 @@ namespace AutoDoctor.Controllers
         {
             if (ModelState.IsValid)
             {
-                var offer = new Offer
-                {
-                    Description = model.Description,
-                    User = model.User
-                };
-
-                await _offerRepository.AddOffer(offer);
-                return RedirectToAction("Index");
+               
             }
 
             return View(model);

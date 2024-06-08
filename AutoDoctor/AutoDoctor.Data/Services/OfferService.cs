@@ -47,9 +47,9 @@ namespace AutoDoctor.Data.Services
             return _context.Offers.Include(o => o.Part).Include(o => o.User).FirstOrDefault(offer => offer.Id == offerId);
         }
 
-        public void UpdateOffer(Guid offerId)
+        public void UpdateOffer(Offer offer)
         {
-            _context.Offers.Update(GetOfferById(offerId));
+            _context.Offers.Update(offer);
             _context.SaveChanges();
         }
     }

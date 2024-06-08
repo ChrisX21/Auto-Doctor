@@ -1,11 +1,13 @@
 ﻿using AutoDoctor.Data.Models;
+using AutoDoctor.Web.ViewModels.Part;
 namespace AutoDoctor.Web.ViewModels.Marketplace
 {
     public class OfferDetailsViewModel
     {
-        public Guid Id { get; set; }
+        public Guid OfferId { get; set; }
+        public string Description { get; set; } = null!;
         public int Views { get; set; } = 0;
-        public int Likes { get; set; } = 0;
-        public ApplicationUser Seller { get; set; } = null!;
+        public ApplicationUser Manufacturer { get; set; } = null!;
+        public PartViewModel Part { get; set; } = null!;
     }
 }
