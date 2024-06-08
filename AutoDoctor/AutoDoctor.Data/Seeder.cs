@@ -1,4 +1,8 @@
-﻿using AutoDoctor.Data.Models;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using AutoDoctor.Data.Models;
 using Microsoft.AspNetCore.Identity;
 
 namespace AutoDoctor.Data
@@ -47,7 +51,10 @@ namespace AutoDoctor.Data
                 };
 
                 var password = "Admin123!";
-                var result = await _userManager.CreateAsync(adminUser, password);
+                var passwordHasher = new PasswordHasher<ApplicationUser>();
+                adminUser.PasswordHash = passwordHasher.HashPassword(adminUser, password);
+
+                var result = await _userManager.CreateAsync(adminUser);
 
                 if (result.Succeeded)
                 {
@@ -56,6 +63,10 @@ namespace AutoDoctor.Data
                 }
                 else
                 {
+                    foreach (var error in result.Errors)
+                    {
+                        Console.WriteLine($"Error: {error.Description}");
+                    }
                     throw new Exception("Failed to create admin user");
                 }
             }
@@ -65,7 +76,7 @@ namespace AutoDoctor.Data
 
         private async Task SeedParts(ApplicationUser user)
         {
-            if(!_context.Parts.Any())
+            if (!_context.Parts.Any())
             {
                 var parts = new List<Part>
                 {
@@ -73,7 +84,7 @@ namespace AutoDoctor.Data
                     {
                         Name = "Engine",
                         ImageUrl = "https://www.autocar.co.uk/sites/autocar.co.uk/files/images/car-reviews/first-drives/legacy/audi-porsche-engine.jpg",
-                        Price = 5600m,
+                        Price = 5600,
                         UserId = user.Id
                     },
                     new Part
@@ -88,7 +99,7 @@ namespace AutoDoctor.Data
                         Name = "Brakes",
                         ImageUrl = "https://www.familyhandyman.com/wp-content/uploads/2020/03/Brake-Caliper-GettyImages-691429614.jpg",
                         Price = 299.99m,
-                        UserId = user.Id 
+                        UserId = user.Id
                     }
                 };
 
@@ -101,34 +112,41 @@ namespace AutoDoctor.Data
         {
             if (!_context.Offers.Any())
             {
-                var part = _context.Parts.First();
-                var offers = new List<Offer>
+                var parts = _context.Parts.ToList();
+                if (parts.Count >= 3)
                 {
-                    new Offer
+                    var offers = new List<Offer>
                     {
-                        Description = "Audi 3.0 V6 engine, 198 000km",
-                        Views = 100,
-                        PartId = part.Id,
-                        UserId = user.Id
-                    },
-                    new Offer
-                    {
-                        Description = "Michelin Pilot 1",
-                        Views = 298,
-                        PartId = part.Id,
-                        UserId = user.Id
-                    },
-                    new Offer
-                    {
-                        Description = "Brembo 120mm brake kit",
-                        Views = 261,
-                        PartId = part.Id,
-                        UserId = user.Id
-                    }
-                };
+                        new Offer
+                        {
+                            Description = "Audi 3.0 V6 engine, 198 000km",
+                            Views = 100,
+                            PartId = parts[0].Id,
+                            UserId = user.Id
+                        },
+                        new Offer
+                        {
+                            Description = "Michelin Pilot 1",
+                            Views = 298,
+                            PartId = parts[1].Id,
+                            UserId = user.Id
+                        },
+                        new Offer
+                        {
+                            Description = "Brembo 120mm brake kit",
+                            Views = 261,
+                            PartId = parts[2].Id,
+                            UserId = user.Id
+                        }
+                    };
 
-                _context.Offers.AddRange(offers);
-                await _context.SaveChangesAsync();
+                    _context.Offers.AddRange(offers);
+                    await _context.SaveChangesAsync();
+                }
+                else
+                {
+                    throw new Exception("Not enough parts to create offers");
+                }
             }
         }
 
