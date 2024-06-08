@@ -38,16 +38,26 @@ namespace AutoDoctor.Data
 
         private async Task<ApplicationUser> SeedUsers()
         {
-            if (_userManager.Users.Any())
+            if (!_userManager.Users.Any())
             {
-                var user = new ApplicationUser
+                var adminUser = new ApplicationUser
                 {
                     UserName = "admin",
                     Email = "admin@gmail.com"
                 };
-                await _userManager.CreateAsync(user);
-                await _userManager.AddToRoleAsync(user, "Admin");
-                return user;
+
+                var password = "Admin123!";
+                var result = await _userManager.CreateAsync(adminUser, password);
+
+                if (result.Succeeded)
+                {
+                    await _userManager.AddToRoleAsync(adminUser, "Admin");
+                    return adminUser;
+                }
+                else
+                {
+                    throw new Exception("Failed to create admin user");
+                }
             }
 
             return _userManager.Users.First();

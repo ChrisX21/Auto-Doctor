@@ -25,7 +25,6 @@ namespace AutoDoctor
                 .AddDefaultUI();
             
             builder.Services.AddScoped<IOfferRepository, OfferService>();
-
             builder.Services.AddScoped<Seeder>();
 
             builder.Services.Configure<IdentityOptions>(options =>
@@ -42,6 +41,13 @@ namespace AutoDoctor
             builder.Services.AddRazorPages();
 
             var app = builder.Build();
+
+            using (var scope = app.Services.CreateScope())
+            {
+                var seeder = scope.ServiceProvider.GetRequiredService<Seeder>();
+                seeder.SeedAsync().Wait();
+            }
+
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
