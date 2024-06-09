@@ -1,0 +1,21 @@
+﻿@page
+@model AutoDoctor.Pages.Identity.Account.Manage.ChangeRoleModel
+@{
+    ViewData["Title"] = "Change Role";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="UserId" />
+
+    <div class="form-group">
+        <label for="roleSelect">Select Role</label>
+        <select id="roleSelect" name="SelectedRole" class="form-control">
+            <option value="Seller">Seller</option>
+            <option value="Manufacturer">Manufacturer</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Change Role</button>
+</form>

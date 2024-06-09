@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3BFA9F32-602B-41F4-B925-61698380631F}|AutoDoctor\\AutoDoctor.csproj|g:\\projects\\programming\\auto-doctor\\autodoctor\\autodoctor\\views\\part\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3BFA9F32-602B-41F4-B925-61698380631F}|AutoDoctor\\AutoDoctor.csproj|solutionrelative:autodoctor\\views\\part\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3BFA9F32-602B-41F4-B925-61698380631F}|AutoDoctor\\AutoDoctor.csproj|g:\\projects\\programming\\auto-doctor\\autodoctor\\autodoctor\\areas\\identity\\pages\\account\\manage\\changerole.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3BFA9F32-602B-41F4-B925-61698380631F}|AutoDoctor\\AutoDoctor.csproj|solutionrelative:autodoctor\\areas\\identity\\pages\\account\\manage\\changerole.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BFA9F32-602B-41F4-B925-61698380631F}|AutoDoctor\\AutoDoctor.csproj|g:\\projects\\programming\\auto-doctor\\autodoctor\\autodoctor\\areas\\identity\\pages\\account\\manage\\changerole.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BFA9F32-602B-41F4-B925-61698380631F}|AutoDoctor\\AutoDoctor.csproj|solutionrelative:autodoctor\\areas\\identity\\pages\\account\\manage\\changerole.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BFA9F32-602B-41F4-B925-61698380631F}|AutoDoctor\\AutoDoctor.csproj|g:\\projects\\programming\\auto-doctor\\autodoctor\\autodoctor\\views\\marketplace\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3BFA9F32-602B-41F4-B925-61698380631F}|AutoDoctor\\AutoDoctor.csproj|solutionrelative:autodoctor\\views\\marketplace\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3BFA9F32-602B-41F4-B925-61698380631F}|AutoDoctor\\AutoDoctor.csproj|g:\\projects\\programming\\auto-doctor\\autodoctor\\autodoctor\\views\\offer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3BFA9F32-602B-41F4-B925-61698380631F}|AutoDoctor\\AutoDoctor.csproj|solutionrelative:autodoctor\\views\\offer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BFA9F32-602B-41F4-B925-61698380631F}|AutoDoctor\\AutoDoctor.csproj|g:\\projects\\programming\\auto-doctor\\autodoctor\\autodoctor\\views\\part\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3BFA9F32-602B-41F4-B925-61698380631F}|AutoDoctor\\AutoDoctor.csproj|solutionrelative:autodoctor\\views\\part\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3BFA9F32-602B-41F4-B925-61698380631F}|AutoDoctor\\AutoDoctor.csproj|g:\\projects\\programming\\auto-doctor\\autodoctor\\autodoctor\\views\\part\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -54,24 +66,61 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\Views\\Offer\\Create.cshtml",
-              "RelativeDocumentMoniker": "AutoDoctor\\Views\\Offer\\Create.cshtml",
-              "ToolTip": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\Views\\Offer\\Create.cshtml*",
-              "RelativeToolTip": "AutoDoctor\\Views\\Offer\\Create.cshtml*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-09T20:06:42.543Z",
+              "Title": "ChangeRole.cshtml.cs",
+              "DocumentMoniker": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\Areas\\Identity\\Pages\\Account\\Manage\\ChangeRole.cshtml.cs",
+              "RelativeDocumentMoniker": "AutoDoctor\\Areas\\Identity\\Pages\\Account\\Manage\\ChangeRole.cshtml.cs",
+              "ToolTip": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\Areas\\Identity\\Pages\\Account\\Manage\\ChangeRole.cshtml.cs*",
+              "RelativeToolTip": "AutoDoctor\\Areas\\Identity\\Pages\\Account\\Manage\\ChangeRole.cshtml.cs*",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAiwC4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T21:54:13.709Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "ChangeRole.cshtml",
+              "DocumentMoniker": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\Areas\\Identity\\Pages\\Account\\Manage\\ChangeRole.cshtml",
+              "RelativeDocumentMoniker": "AutoDoctor\\Areas\\Identity\\Pages\\Account\\Manage\\ChangeRole.cshtml",
+              "ToolTip": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\Areas\\Identity\\Pages\\Account\\Manage\\ChangeRole.cshtml",
+              "RelativeToolTip": "AutoDoctor\\Areas\\Identity\\Pages\\Account\\Manage\\ChangeRole.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-09T21:54:08.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\Views\\Marketplace\\Details.cshtml",
+              "RelativeDocumentMoniker": "AutoDoctor\\Views\\Marketplace\\Details.cshtml",
+              "ToolTip": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\Views\\Marketplace\\Details.cshtml",
+              "RelativeToolTip": "AutoDoctor\\Views\\Marketplace\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-09T20:08:45.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\Views\\Offer\\Create.cshtml",
+              "RelativeDocumentMoniker": "AutoDoctor\\Views\\Offer\\Create.cshtml",
+              "ToolTip": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\Views\\Offer\\Create.cshtml",
+              "RelativeToolTip": "AutoDoctor\\Views\\Offer\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-09T20:06:42.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "OfferController.cs",
               "DocumentMoniker": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\Controllers\\OfferController.cs",
               "RelativeDocumentMoniker": "AutoDoctor\\Controllers\\OfferController.cs",
@@ -79,12 +128,11 @@
               "RelativeToolTip": "AutoDoctor\\Controllers\\OfferController.cs",
               "ViewState": "AQIAAFgAAAAAAAAAAAAUwIwAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T19:33:14.857Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T19:33:14.857Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "MarketplaceController.cs",
               "DocumentMoniker": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\Controllers\\MarketplaceController.cs",
               "RelativeDocumentMoniker": "AutoDoctor\\Controllers\\MarketplaceController.cs",
@@ -92,12 +140,11 @@
               "RelativeToolTip": "AutoDoctor\\Controllers\\MarketplaceController.cs",
               "ViewState": "AQIAACMAAAAAAAAAAADwvzcAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T19:33:07.547Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T19:33:07.547Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "AutoDoctor\\Views\\Shared\\_Layout.cshtml",
@@ -105,12 +152,11 @@
               "RelativeToolTip": "AutoDoctor\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAABIAAAAAAAAAAAAAABwAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-09T19:23:34.071Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T19:23:34.071Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\Program.cs",
               "RelativeDocumentMoniker": "AutoDoctor\\Program.cs",
@@ -118,12 +164,11 @@
               "RelativeToolTip": "AutoDoctor\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T18:48:31.569Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T18:48:31.569Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "All.cshtml",
               "DocumentMoniker": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\Views\\Marketplace\\All.cshtml",
               "RelativeDocumentMoniker": "AutoDoctor\\Views\\Marketplace\\All.cshtml",
@@ -131,12 +176,11 @@
               "RelativeToolTip": "AutoDoctor\\Views\\Marketplace\\All.cshtml",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAAB4AAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-09T14:51:34.625Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T14:51:34.625Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "PartController.cs",
               "DocumentMoniker": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\Controllers\\PartController.cs",
               "RelativeDocumentMoniker": "AutoDoctor\\Controllers\\PartController.cs",
@@ -144,12 +188,11 @@
               "RelativeToolTip": "AutoDoctor\\Controllers\\PartController.cs",
               "ViewState": "AQIAAGwAAAAAAAAAAAAqwIMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T14:39:06.482Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T14:39:06.482Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\Views\\Part\\Index.cshtml",
               "RelativeDocumentMoniker": "AutoDoctor\\Views\\Part\\Index.cshtml",
@@ -157,25 +200,23 @@
               "RelativeToolTip": "AutoDoctor\\Views\\Part\\Index.cshtml",
               "ViewState": "AQIAAAEAAAAAAAAAAAAcwAwAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-09T14:14:56.483Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T14:14:56.483Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Create.cshtml",
               "DocumentMoniker": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\Views\\Part\\Create.cshtml",
               "RelativeDocumentMoniker": "AutoDoctor\\Views\\Part\\Create.cshtml",
-              "ToolTip": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\Views\\Part\\Create.cshtml*",
-              "RelativeToolTip": "AutoDoctor\\Views\\Part\\Create.cshtml*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAAAAAA",
+              "ToolTip": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\Views\\Part\\Create.cshtml",
+              "RelativeToolTip": "AutoDoctor\\Views\\Part\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-09T14:13:59.129Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T14:13:59.129Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "IPartRepository.cs",
               "DocumentMoniker": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data\\Repositories\\IPartRepository.cs",
               "RelativeDocumentMoniker": "AutoDoctor.Data\\Repositories\\IPartRepository.cs",
@@ -183,12 +224,11 @@
               "RelativeToolTip": "AutoDoctor.Data\\Repositories\\IPartRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T13:17:20.327Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T13:17:20.327Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "PartService.cs",
               "DocumentMoniker": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data\\Services\\PartService.cs",
               "RelativeDocumentMoniker": "AutoDoctor.Data\\Services\\PartService.cs",
@@ -196,8 +236,7 @@
               "RelativeToolTip": "AutoDoctor.Data\\Services\\PartService.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAAA1wAMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T12:11:48.452Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T12:11:48.452Z"
             }
           ]
         }
