@@ -1,0 +1,38 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model IEnumerable<AutoDoctor.Web.ViewModels.Part.PartViewModel>
+@inject SignInManager<ApplicationUser> _signInManager
+@inject UserManager<ApplicationUser> _userManager
+
+@{
+    ViewData["Title"] = "All Parts";
+}
+
+<h2 class="text-center mb-4">All Parts</h2>
+
+<div class="row">
+    @foreach (var part in Model)
+    {
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <a href="@Url.Action("Details", "Part", new { id = part.Id })">
+                    <img src="@Html.Raw(part.ImageUrl)" class="card-img-top" alt="Part image">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">@part.Name</h5>
+                    <p class="card-text">Price: @string.Format("{0:C}", part.Price)</p>
+                    @if (_signInManager.IsSignedIn(User))
+                    {
+                        var user = await _userManager.GetUserAsync(User);
+                        if (await _userManager.IsInRoleAsync(user, "Admin") || await _userManager.IsInRoleAsync(user, "Manufacturer"))
+                        {
+                            <div class="d-flex justify-content-between">
+                                <a href="@Url.Action("Edit", "Part", new { id = part.Id })" class="btn btn-primary">Edit</a>
+                                <a href="@Url.Action("Delete", "Part", new { id = part.Id })" class="btn btn-danger">Delete</a>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>

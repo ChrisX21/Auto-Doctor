@@ -19,7 +19,7 @@
                 </a>
                 <div class="card-body">
                     <h5 class="card-title">@offer.Part.Name</h5>
-                    <p class="card-text">Price: @offer.Part.Price</p>
+                    <h3 class="card-text">Price: @string.Format("{0:C}", offer.Part.Price)</h3>
                     <p class="card-text">Manufacturer: @offer.Part.Manufacturer.UserName</p>
                     @if (_signInManager.IsSignedIn(User))
                     {

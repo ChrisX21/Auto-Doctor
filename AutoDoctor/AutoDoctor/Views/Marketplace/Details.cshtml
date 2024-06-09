@@ -12,8 +12,8 @@
         <div class="col-md-8">
             <h1>@Model.Part.Name</h1>
             <p>@Model.Description</p>
+            <h3 class="card-text">Price: @string.Format("{0:C}", @Model.Part.Price)</h3>
             <p><strong>Manufacturer:</strong> @Model.Manufacturer.UserName</p>
-            <p><strong>Price:</strong> @Model.Part.Price</p>
             <p><strong>Views:</strong> @Model.Views</p>
             <a href="#" class="btn btn-primary">Buy</a>
         </div>

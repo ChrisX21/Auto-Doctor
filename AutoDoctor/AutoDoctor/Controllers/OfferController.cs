@@ -23,7 +23,7 @@ namespace AutoDoctor.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-            var parts = _partRepository.GetAllPartsAsync();
+            var parts = _partRepository.GetAllParts();
             var model = new OfferDetailsViewModel
             {
                 Parts = parts.Select(p => new PartViewModel
@@ -45,7 +45,7 @@ namespace AutoDoctor.Controllers
                 return BadRequest("User not found.");
             }
 
-            var part = _partRepository.GetPartByIdAsync(model.Part.Id);
+            var part = _partRepository.GetPartById(model.Part.Id);
             if (part == null)
             {
                 return BadRequest("Part not found.");

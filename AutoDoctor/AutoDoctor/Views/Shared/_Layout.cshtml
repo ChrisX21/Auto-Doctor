@@ -35,6 +35,12 @@
                                     <a class="nav-link text-dark" asp-area="" asp-controller="Offer" asp-action="Create">Create an Offer</a>
                                 </li>
                             }
+                            if (await UserManager.IsInRoleAsync(user, "Admin") || await UserManager.IsInRoleAsync(user, "Manufacturer"))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Part" asp-action="Create">Create a Part</a>
+                                </li>
+                            }
                         }
                     </ul>
                     <partial name="_LoginPartial" />

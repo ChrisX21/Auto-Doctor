@@ -2,8 +2,8 @@
 {
     public interface IOrderRepository
     {
-        public void AddOrder();
-        public void UpdateOrderStatus(Guid OrderId);
-        public void CancelOrder(Guid OrderId);
+        void AddOrder();
+        void UpdateOrderStatus(Guid OrderId);
+        void CancelOrder(Guid OrderId);
     }
 }

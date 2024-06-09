@@ -4,7 +4,9 @@ namespace AutoDoctor.Data.Repositories
 {
     public interface IPartRepository
     {
-        List<Part> GetAllPartsAsync();
-        Part GetPartByIdAsync(Guid partId);
+        void Create(Part part);
+        void UpdateQuantity(Part part, int quantity);
+        List<Part> GetAllParts();
+        Part GetPartById(Guid partId);
     }
 }
