@@ -9,5 +9,6 @@ namespace AutoDoctor.Web.ViewModels.Marketplace
         public int Views { get; set; } = 0;
         public ApplicationUser Manufacturer { get; set; } = null!;
         public PartViewModel Part { get; set; } = null!;
+        public List<PartViewModel> Parts { get; set; } = new List<PartViewModel>();
     }
 }

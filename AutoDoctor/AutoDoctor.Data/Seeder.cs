@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AutoDoctor.Data.Models;
+﻿using AutoDoctor.Data.Models;
 using Microsoft.AspNetCore.Identity;
 
 namespace AutoDoctor.Data
@@ -34,7 +30,7 @@ namespace AutoDoctor.Data
             if (!_roleManager.Roles.Any())
             {
                 await _roleManager.CreateAsync(new IdentityRole("Admin"));
-                await _roleManager.CreateAsync(new IdentityRole("User"));
+                await _roleManager.CreateAsync(new IdentityRole("Buyer"));
                 await _roleManager.CreateAsync(new IdentityRole("Seller"));
                 await _roleManager.CreateAsync(new IdentityRole("Manufacturer"));
             }
@@ -84,7 +80,8 @@ namespace AutoDoctor.Data
                     {
                         Name = "Engine",
                         ImageUrl = "https://www.autocar.co.uk/sites/autocar.co.uk/files/images/car-reviews/first-drives/legacy/audi-porsche-engine.jpg",
-                        Price = 5600,
+                        Price = 5600m,
+                        Quantity = 2,
                         UserId = user.Id
                     },
                     new Part
@@ -92,6 +89,7 @@ namespace AutoDoctor.Data
                         Name = "Tires",
                         ImageUrl = "https://hips.hearstapps.com/hmg-prod/images/pile-of-tires-on-white-background-royalty-free-image-672151801-1561751929.jpg?resize=2048:*",
                         Price = 489m,
+                        Quantity = 1,
                         UserId = user.Id
                     },
                     new Part
@@ -99,6 +97,7 @@ namespace AutoDoctor.Data
                         Name = "Brakes",
                         ImageUrl = "https://www.familyhandyman.com/wp-content/uploads/2020/03/Brake-Caliper-GettyImages-691429614.jpg",
                         Price = 299.99m,
+                        Quantity = 4,
                         UserId = user.Id
                     }
                 };

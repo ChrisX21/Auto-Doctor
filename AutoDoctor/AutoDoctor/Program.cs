@@ -25,6 +25,7 @@ namespace AutoDoctor
                 .AddDefaultUI();
             
             builder.Services.AddScoped<IOfferRepository, OfferService>();
+            builder.Services.AddScoped<IPartRepository, PartService>();
             builder.Services.AddScoped<Seeder>();
 
             builder.Services.Configure<IdentityOptions>(options =>

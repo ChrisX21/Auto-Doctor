@@ -1,4 +1,7 @@
-﻿@model IEnumerable<AutoDoctor.Web.ViewModels.Marketplace.AllOffersViewModel>
+﻿@using Microsoft.AspNetCore.Identity
+@model IEnumerable<AutoDoctor.Web.ViewModels.Marketplace.AllOffersViewModel>
+@inject SignInManager<ApplicationUser> _signInManager
+@inject UserManager<ApplicationUser> _userManager
 
 @{
     ViewData["Title"] = "Marketplace";
@@ -18,10 +21,17 @@
                     <h5 class="card-title">@offer.Part.Name</h5>
                     <p class="card-text">Price: @offer.Part.Price</p>
                     <p class="card-text">Manufacturer: @offer.Part.Manufacturer.UserName</p>
-                    <div class="d-flex justify-content-between">
-                        <a href="@Url.Action("Edit", "Marketplace", new { id = offer.Part.Id })" class="btn btn-primary">Edit</a>
-                        <a href="@Url.Action("Delete", "Marketplace", new { id = offer.Part.Id })" class="btn btn-danger">Delete</a>
-                    </div>
+                    @if (_signInManager.IsSignedIn(User))
+                    {
+                        var user = await _userManager.GetUserAsync(User);
+                        if(await _userManager.IsInRoleAsync(user, "Admin") || await _userManager.IsInRoleAsync(user, "Seller"))
+                        {
+                            <div class="d-flex justify-content-between">
+                                <a href="@Url.Action("Edit", "Marketplace", new { id = offer.Part.Id })" class="btn btn-primary">Edit</a>
+                                <a href="@Url.Action("Delete", "Marketplace", new { id = offer.Part.Id })" class="btn btn-danger">Delete</a>
+                            </div>
+                        }
+                    }
                 </div>
             </div>
         </div>
