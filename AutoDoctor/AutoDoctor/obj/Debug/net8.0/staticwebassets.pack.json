@@ -245,6 +245,14 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\wwwroot\\uploads\\exhaust_6f1c70bd-f0f5-461f-8f2d-44107f63f780.jpg",
+      "PackagePath": "staticwebassets\\uploads\\exhaust_6f1c70bd-f0f5-461f-8f2d-44107f63f780.jpg"
+    },
+    {
+      "Id": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\wwwroot\\uploads\\exhaust_e90c43ac-01ad-474d-a40b-60730607a865.jpg",
+      "PackagePath": "staticwebassets\\uploads\\exhaust_e90c43ac-01ad-474d-a40b-60730607a865.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AutoDoctor.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

@@ -2,6 +2,7 @@
 using AutoDoctor.Data.Repositories;
 using AutoDoctor.Web.ViewModels.Marketplace;
 using AutoDoctor.Web.ViewModels.Part;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,7 +20,7 @@ namespace AutoDoctor.Controllers
             _userManager = userManager;
             _partRepository = partRepository;
         }
-
+        [Authorize(Roles = "Seller,Admin")]
         [HttpGet]
         public IActionResult Create()
         {
@@ -34,7 +35,8 @@ namespace AutoDoctor.Controllers
             };
             return View(model);
         }
-
+        
+        [Authorize(Roles = "Seller,Admin")]
         [HttpPost]
         public async Task<IActionResult> Create(OfferDetailsViewModel model)
         {
@@ -64,12 +66,14 @@ namespace AutoDoctor.Controllers
             return RedirectToAction("All", "Marketplace");
         }
 
+        [Authorize(Roles = "Seller,Admin")]
         public IActionResult Delete(Guid offerId)
         {
             _offerRepository.DeleteOffer(offerId);
             return RedirectToAction("All", "Marketplace");
         }
 
+        [Authorize(Roles = "Seller,Admin")]
         [HttpGet]
         public IActionResult Edit(Guid offerId)
         {
@@ -96,28 +100,44 @@ namespace AutoDoctor.Controllers
             return View(model);
         }
 
+        [Authorize(Roles = "Seller,Admin")]
         [HttpPost]
-        public IActionResult Edit(Guid offerId, OfferDetailsViewModel model)
+        public async Task<IActionResult> Edit(Guid id, PartViewModel model, IFormFile ImageFile)
         {
-            if (!ModelState.IsValid)
-            {
-                return View(model);
-            }
-
-            var offer = _offerRepository.GetOfferById(offerId);
-            if (offer == null)
+            var part = _partRepository.GetPartById(id);
+            if (part == null)
             {
                 return NotFound();
             }
 
-            offer.Description = model.Description;
-            offer.Part.Name = model.Part.Name;
-            offer.Part.ImageUrl = model.Part.ImageUrl;
-            offer.Part.Price = model.Part.Price;
+            if (ImageFile != null && ImageFile.Length > 0)
+            {
+                var fileName = Path.GetFileNameWithoutExtension(ImageFile.FileName);
+                var extension = Path.GetExtension(ImageFile.FileName);
+                var uniqueFileName = $"{fileName}_{Guid.NewGuid()}{extension}";
+                var uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
+                var filePath = Path.Combine(uploadPath, uniqueFileName);
 
-            _offerRepository.UpdateOffer(offer);
+                if (!Directory.Exists(uploadPath))
+                {
+                    Directory.CreateDirectory(uploadPath);
+                }
 
-            return RedirectToAction("All", "Marketplace");
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    await ImageFile.CopyToAsync(fileStream);
+                }
+
+                model.ImageUrl = $"/uploads/{uniqueFileName}";
+            }
+
+            part.Name = model.Name;
+            part.Price = model.Price;
+            part.ImageUrl = model.ImageUrl;
+
+            _partRepository.Update(part);
+
+            return RedirectToAction("Index");
         }
     }
 }

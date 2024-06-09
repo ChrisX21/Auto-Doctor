@@ -6,7 +6,7 @@
 
 <h2>Create Part</h2>
 
-<form asp-action="Create" method="post">
+<form asp-action="Create" method="post" enctype="multipart/form-data">
     <div class="form-group">
         <label asp-for="Name"></label>
         <input asp-for="Name" class="form-control" />
@@ -18,9 +18,8 @@
         <span asp-validation-for="Price" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <label asp-for="ImageUrl"></label>
-        <input asp-for="ImageUrl" class="form-control" />
-        <span asp-validation-for="ImageUrl" class="text-danger"></span>
+        <label class="control-label">Upload Image</label>
+        <input type="file" name="ImageFile" class="form-control" />
     </div>
     <button type="submit" class="btn btn-primary">Create</button>
 </form>

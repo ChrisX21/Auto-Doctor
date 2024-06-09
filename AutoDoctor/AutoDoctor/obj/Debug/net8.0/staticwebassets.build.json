@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "O7/zvqIIJzuOAfi9a/8tNXqFJ+InU5maapOZf7Ce8tI=",
+  "Hash": "dY4VlSRFCOYoCAWpbnXViA0RlDQf4Rq5CJaUtAm5goI=",
   "Source": "AutoDoctor",
   "BasePath": "_content/AutoDoctor",
   "Mode": "Default",
@@ -2333,6 +2333,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\wwwroot\\uploads\\exhaust_6f1c70bd-f0f5-461f-8f2d-44107f63f780.jpg",
+      "SourceId": "AutoDoctor",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\wwwroot\\",
+      "BasePath": "_content/AutoDoctor",
+      "RelativePath": "uploads/exhaust_6f1c70bd-f0f5-461f-8f2d-44107f63f780.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\exhaust_6f1c70bd-f0f5-461f-8f2d-44107f63f780.jpg"
+    },
+    {
+      "Identity": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\wwwroot\\uploads\\exhaust_e90c43ac-01ad-474d-a40b-60730607a865.jpg",
+      "SourceId": "AutoDoctor",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\wwwroot\\",
+      "BasePath": "_content/AutoDoctor",
+      "RelativePath": "uploads/exhaust_e90c43ac-01ad-474d-a40b-60730607a865.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\exhaust_e90c43ac-01ad-474d-a40b-60730607a865.jpg"
     }
   ]
 }

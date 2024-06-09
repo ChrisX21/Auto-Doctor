@@ -26,20 +26,34 @@ namespace AutoDoctor.Data.Services
 
         public List<Part> GetAllParts()
         {
-            return _context.Parts.ToList();
+            return _context.Parts.Include(p => p.User).ToList();
         }
 
         public Part GetPartById(Guid partId)
         {
-            return _context.Parts.FirstOrDefault(part => part.Id == partId);
+            return _context.Parts.Include(p => p.User).FirstOrDefault(part => part.Id == partId);
         }
 
-        public void UpdateQuantity(Part part, int quantity)
+        public void Update(Part part)
         {
-            part.Quantity = quantity;
-            _context.Update(part);
+            if (part == null)
+            {
+                throw new ArgumentNullException(nameof(part));
+            }
+
+            _context.Parts.Update(part);
+            _context.SaveChanges();
+        }
+
+        public void Delete(Part part)
+        {
+            if (part == null)
+            {
+                throw new ArgumentNullException(nameof(part));
+            }
+
+            _context.Parts.Remove(part);
             _context.SaveChanges();
         }
     }
 }
-
