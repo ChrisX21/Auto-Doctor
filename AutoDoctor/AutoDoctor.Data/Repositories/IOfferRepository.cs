@@ -9,6 +9,6 @@ namespace AutoDoctor.Data.Repositories
         Offer GetOfferById(Guid OfferId);
         Task AddOffer(Offer offer);
         void UpdateOffer(Offer offer);
-        void DeleteOffer(Guid OfferId);
+        void DeleteOffer(Guid offerId);
     }
 }

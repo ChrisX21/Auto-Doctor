@@ -1,6 +1,7 @@
 ﻿using AutoDoctor.Data.Models;
 using AutoDoctor.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 
 namespace AutoDoctor.Data.Services
 {
@@ -29,7 +30,8 @@ namespace AutoDoctor.Data.Services
 
         public void DeleteOffer(Guid offerId)
         {
-            _context.Remove(GetOfferById(offerId));
+            var offer = GetOfferById(offerId);
+            _context.Remove(offer);
             _context.SaveChanges();
         }
 

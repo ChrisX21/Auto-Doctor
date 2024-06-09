@@ -1,4 +1,5 @@
-﻿using AutoDoctor.Data.Repositories;
+﻿using AutoDoctor.Data.Models;
+using AutoDoctor.Data.Repositories;
 using AutoDoctor.Web.ViewModels.Marketplace;
 using AutoDoctor.Web.ViewModels.Part;
 using Microsoft.AspNetCore.Mvc;

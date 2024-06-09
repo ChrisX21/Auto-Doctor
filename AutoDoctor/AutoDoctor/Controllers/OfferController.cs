@@ -38,7 +38,6 @@ namespace AutoDoctor.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(OfferDetailsViewModel model)
         {
-
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
@@ -61,6 +60,62 @@ namespace AutoDoctor.Controllers
             };
 
             await _offerRepository.AddOffer(offer);
+
+            return RedirectToAction("All", "Marketplace");
+        }
+
+        public IActionResult Delete(Guid offerId)
+        {
+            _offerRepository.DeleteOffer(offerId);
+            return RedirectToAction("All", "Marketplace");
+        }
+
+        [HttpGet]
+        public IActionResult Edit(Guid offerId)
+        {
+            var offer = _offerRepository.GetOfferById(offerId);
+            if (offer == null)
+            {
+                return NotFound();
+            }
+
+            var model = new OfferDetailsViewModel
+            {
+                OfferId = offer.Id,
+                Description = offer.Description,
+                Part = new PartViewModel
+                {
+                    Id = offer.Part.Id,
+                    Name = offer.Part.Name,
+                    ImageUrl = offer.Part.ImageUrl,
+                    Price = offer.Part.Price,
+                    Manufacturer = offer.Part.User
+                }
+            };
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(Guid offerId, OfferDetailsViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            var offer = _offerRepository.GetOfferById(offerId);
+            if (offer == null)
+            {
+                return NotFound();
+            }
+
+            offer.Description = model.Description;
+            offer.Part.Name = model.Part.Name;
+            offer.Part.ImageUrl = model.Part.ImageUrl;
+            offer.Part.Price = model.Part.Price;
+
+            _offerRepository.UpdateOffer(offer);
 
             return RedirectToAction("All", "Marketplace");
         }

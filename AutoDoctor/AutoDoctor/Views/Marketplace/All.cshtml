@@ -27,8 +27,8 @@
                         if(await _userManager.IsInRoleAsync(user, "Admin") || await _userManager.IsInRoleAsync(user, "Seller"))
                         {
                             <div class="d-flex justify-content-between">
-                                <a href="@Url.Action("Edit", "Marketplace", new { id = offer.Part.Id })" class="btn btn-primary">Edit</a>
-                                <a href="@Url.Action("Delete", "Marketplace", new { id = offer.Part.Id })" class="btn btn-danger">Delete</a>
+                                <a href="@Url.Action("Edit", "Offer", new { offerId = offer.OfferId })" class="btn btn-primary">Edit</a>
+                                <a href="@Url.Action("Delete", "Offer", new { offerId = offer.OfferId })" class="btn btn-danger">Delete</a>
                             </div>
                         }
                     }
