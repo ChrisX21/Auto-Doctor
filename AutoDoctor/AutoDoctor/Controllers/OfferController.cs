@@ -26,7 +26,6 @@ namespace AutoDoctor.Controllers
         }
 
         [Authorize(Roles = "Seller, Admin")]
-        [ValidateAntiForgeryToken]
         [HttpGet]
         public IActionResult Create()
         {
