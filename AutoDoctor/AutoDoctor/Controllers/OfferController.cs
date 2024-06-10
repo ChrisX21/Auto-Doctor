@@ -73,7 +73,6 @@ namespace AutoDoctor.Controllers
         }
 
         [Authorize(Roles = "Seller, Admin")]
-        [ValidateAntiForgeryToken]
         public IActionResult Delete(Guid offerId)
         {
             _offerRepository.DeleteOffer(offerId);
@@ -81,7 +80,6 @@ namespace AutoDoctor.Controllers
         }
 
         [Authorize(Roles = "Seller, Admin")]
-        [ValidateAntiForgeryToken]
         [HttpGet]
         public IActionResult Edit(Guid offerId)
         {
@@ -151,7 +149,6 @@ namespace AutoDoctor.Controllers
 
         [HttpPost]
         [Authorize]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Buy(Guid id)
         {
             var offer = _offerRepository.GetOfferById(id);
