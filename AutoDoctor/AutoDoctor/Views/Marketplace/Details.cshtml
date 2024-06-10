@@ -1,4 +1,6 @@
-﻿@model AutoDoctor.Web.ViewModels.Marketplace.OfferDetailsViewModel
+﻿@using Microsoft.AspNetCore.Identity
+@model AutoDoctor.Web.ViewModels.Marketplace.OfferDetailsViewModel
+@inject SignInManager<ApplicationUser> _signInManager
 
 @{
     ViewData["Title"] = "Offer Details";
@@ -20,7 +22,17 @@
                     <h3 class="card-text text-primary mt-3">Price: @string.Format("{0:C}", @Model.Part.Price)</h3>
                     <p><strong>Manufacturer:</strong> @Model.Manufacturer.UserName</p>
                     <p><strong>Views:</strong> @Model.Views</p>
-                    <a href="#" class="btn btn-primary mt-3 align-self-center">Buy</a>
+                    <p><strong>Quantity:</strong> @Model.Part.Quantity</p>
+                    @if (!_signInManager.IsSignedIn(User))
+                    {
+                        <a href="https://localhost:7271/Identity/Account/Login" class="btn btn-primary mt-3 align-self-center w-100">Buy</a>
+                    }
+                    else
+                    {
+                        <form method="post" action="@Url.Action("Buy", "Offer", new { id = @Model.OfferId })">
+                            <button type="submit" class="btn btn-primary mt-3 align-self-center w-100">Buy</button>
+                        </form>
+                    }
                 </div>
             </div>
         </div>

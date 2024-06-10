@@ -7,10 +7,10 @@ using Microsoft.AspNetCore.Authorization;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using System;
 
 namespace AutoDoctor.Controllers
 {
-    [Authorize(Roles = "Manufacturer,Admin")]
     public class PartController : Controller
     {
         private readonly IPartRepository _partRepository;
@@ -30,33 +30,14 @@ namespace AutoDoctor.Controllers
                 Name = part.Name,
                 ImageUrl = part.ImageUrl,
                 Price = part.Price,
+                Quantity = part.Quantity,
                 Manufacturer = part.User
             }).ToList();
 
             return View(parts);
         }
 
-        [HttpGet]
-        public IActionResult Details(Guid id)
-        {
-            var part = _partRepository.GetPartById(id);
-            if (part == null)
-            {
-                return NotFound();
-            }
-
-            var model = new PartViewModel
-            {
-                Id = part.Id,
-                Name = part.Name,
-                ImageUrl = part.ImageUrl,
-                Price = part.Price,
-                Manufacturer = part.User
-            };
-
-            return View(model);
-        }
-
+        [Authorize(Roles = "Admin,Manufacturer")]
         [HttpGet]
         public IActionResult Create()
         {
@@ -64,6 +45,7 @@ namespace AutoDoctor.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin,Manufacturer")]
         public async Task<IActionResult> Create(PartViewModel model, IFormFile ImageFile)
         {
             string imagePath = null;
@@ -101,6 +83,7 @@ namespace AutoDoctor.Controllers
                 Name = model.Name,
                 ImageUrl = imagePath,
                 Price = model.Price,
+                Quantity = model.Quantity,
                 UserId = user.Id,
                 User = user
             };
@@ -111,6 +94,7 @@ namespace AutoDoctor.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Admin,Manufacturer")]
         public IActionResult Edit(Guid id)
         {
             var part = _partRepository.GetPartById(id);
@@ -124,13 +108,14 @@ namespace AutoDoctor.Controllers
                 Id = part.Id,
                 Name = part.Name,
                 ImageUrl = part.ImageUrl,
+                Quantity = part.Quantity,
                 Price = part.Price
             };
 
             return View(model);
         }
 
-
+        [Authorize(Roles = "Admin,Manufacturer")]
         public IActionResult Delete(Guid id)
         {
             var part = _partRepository.GetPartById(id);
@@ -141,7 +126,7 @@ namespace AutoDoctor.Controllers
 
             _partRepository.Delete(part);
 
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", "Part");
         }
     }
 }

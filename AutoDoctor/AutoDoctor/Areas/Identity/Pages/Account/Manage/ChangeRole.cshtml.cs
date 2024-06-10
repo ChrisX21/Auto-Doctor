@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Threading.Tasks;
 using AutoDoctor.Data.Models;
+using System.Net;
 
 namespace AutoDoctor.Pages.Identity.Account.Manage
 {
@@ -36,7 +37,7 @@ namespace AutoDoctor.Pages.Identity.Account.Manage
                 await _userManager.RemoveFromRolesAsync(user, roles);
                 await _userManager.AddToRoleAsync(user, SelectedRole);
 
-                return RedirectToPage("./Index");
+                return RedirectToAction("Index", "Home");
             }
 
             ModelState.AddModelError(string.Empty, "User not found");

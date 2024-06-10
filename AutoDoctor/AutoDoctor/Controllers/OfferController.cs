@@ -5,6 +5,10 @@ using AutoDoctor.Web.ViewModels.Part;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace AutoDoctor.Controllers
 {
@@ -20,7 +24,8 @@ namespace AutoDoctor.Controllers
             _userManager = userManager;
             _partRepository = partRepository;
         }
-        [Authorize(Roles = "Seller,Admin")]
+
+        [Authorize(Roles = "Seller, Admin")]
         [HttpGet]
         public IActionResult Create()
         {
@@ -35,8 +40,8 @@ namespace AutoDoctor.Controllers
             };
             return View(model);
         }
-        
-        [Authorize(Roles = "Seller,Admin")]
+
+        [Authorize(Roles = "Seller, Admin")]
         [HttpPost]
         public async Task<IActionResult> Create(OfferDetailsViewModel model)
         {
@@ -66,14 +71,14 @@ namespace AutoDoctor.Controllers
             return RedirectToAction("All", "Marketplace");
         }
 
-        [Authorize(Roles = "Seller,Admin")]
+        [Authorize(Roles = "Seller, Admin")]
         public IActionResult Delete(Guid offerId)
         {
             _offerRepository.DeleteOffer(offerId);
             return RedirectToAction("All", "Marketplace");
         }
 
-        [Authorize(Roles = "Seller,Admin")]
+        [Authorize(Roles = "Seller, Admin")]
         [HttpGet]
         public IActionResult Edit(Guid offerId)
         {
@@ -100,7 +105,7 @@ namespace AutoDoctor.Controllers
             return View(model);
         }
 
-        [Authorize(Roles = "Seller,Admin")]
+        [Authorize(Roles = "Seller, Admin")]
         [HttpPost]
         public async Task<IActionResult> Edit(Guid id, PartViewModel model, IFormFile ImageFile)
         {
@@ -138,6 +143,30 @@ namespace AutoDoctor.Controllers
             _partRepository.Update(part);
 
             return RedirectToAction("Index");
+        }
+
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> Buy(Guid id)
+        {
+            var offer = _offerRepository.GetOfferById(id);
+            if (offer == null)
+            {
+                return NotFound();
+            }
+
+            offer.Part.Quantity -= 1;
+
+            if (offer.Part.Quantity <= 0)
+            {
+                _offerRepository.DeleteOffer(id);
+            }
+            else
+            {
+                _offerRepository.UpdateOffer(offer);
+            }
+
+            return RedirectToAction("All", "Marketplace");
         }
     }
 }

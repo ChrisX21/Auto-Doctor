@@ -245,8 +245,28 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\wwwroot\\uploads\\Auto Mechanic.png",
+      "PackagePath": "staticwebassets\\uploads\\Auto Mechanic.png"
+    },
+    {
+      "Id": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\wwwroot\\uploads\\exhaust_59b6b94a-7b7f-4a8f-abb3-824b8641d87f.jpg",
+      "PackagePath": "staticwebassets\\uploads\\exhaust_59b6b94a-7b7f-4a8f-abb3-824b8641d87f.jpg"
+    },
+    {
+      "Id": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\wwwroot\\uploads\\exhaust_65e97af9-27e4-400d-9528-691915080000.jpg",
+      "PackagePath": "staticwebassets\\uploads\\exhaust_65e97af9-27e4-400d-9528-691915080000.jpg"
+    },
+    {
+      "Id": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\wwwroot\\uploads\\exhaust_6a8d6bd5-3a35-41c0-9fa8-1e1975a243f6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\exhaust_6a8d6bd5-3a35-41c0-9fa8-1e1975a243f6.jpg"
+    },
+    {
       "Id": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\wwwroot\\uploads\\exhaust_6f1c70bd-f0f5-461f-8f2d-44107f63f780.jpg",
       "PackagePath": "staticwebassets\\uploads\\exhaust_6f1c70bd-f0f5-461f-8f2d-44107f63f780.jpg"
+    },
+    {
+      "Id": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\wwwroot\\uploads\\exhaust_d044ab24-e23d-44b0-b00c-7a8246683429.jpg",
+      "PackagePath": "staticwebassets\\uploads\\exhaust_d044ab24-e23d-44b0-b00c-7a8246683429.jpg"
     },
     {
       "Id": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor\\wwwroot\\uploads\\exhaust_e90c43ac-01ad-474d-a40b-60730607a865.jpg",

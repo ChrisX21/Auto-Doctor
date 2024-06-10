@@ -10,6 +10,9 @@
 <h2 class="text-center mb-4">All Offers</h2>
 
 <div class="row">
+    @if(!Model.Any()){
+        <h3 class="text-center">No offers available</h3>
+    }
     @foreach (var offer in Model)
     {
         <div class="col-md-4 mb-4">
@@ -24,13 +27,23 @@
                     @if (_signInManager.IsSignedIn(User))
                     {
                         var user = await _userManager.GetUserAsync(User);
-                        if(await _userManager.IsInRoleAsync(user, "Admin") || await _userManager.IsInRoleAsync(user, "Seller"))
+                        if (await _userManager.IsInRoleAsync(user, "Admin") || offer.User.Id == user.Id)
                         {
                             <div class="d-flex justify-content-between">
                                 <a href="@Url.Action("Edit", "Offer", new { offerId = offer.OfferId })" class="btn btn-primary">Edit</a>
                                 <a href="@Url.Action("Delete", "Offer", new { offerId = offer.OfferId })" class="btn btn-danger">Delete</a>
                             </div>
                         }
+                        else
+                        {
+                            <form method="post" action="@Url.Action("Buy", "Offer", new { id = offer.OfferId})">
+                                <button type="submit" class="btn btn-primary mt-3 align-self-center w-100">Buy</button>
+                            </form>
+                        }
+                    }
+                    else
+                    {
+                        <a href="https://localhost:7271/Identity/Account/Login" class="btn btn-primary mt-3 align-self-center w-100">Buy</a>
                     }
                 </div>
             </div>
