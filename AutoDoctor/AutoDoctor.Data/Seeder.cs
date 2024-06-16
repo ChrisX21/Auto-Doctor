@@ -89,7 +89,7 @@ namespace AutoDoctor.Data
                         Name = "Tires",
                         ImageUrl = "https://hips.hearstapps.com/hmg-prod/images/pile-of-tires-on-white-background-royalty-free-image-672151801-1561751929.jpg?resize=2048:*",
                         Price = 489m,
-                        Quantity = 1,
+                        Quantity = 3,
                         UserId = user.Id
                     },
                     new Part
