@@ -4,6 +4,10 @@ using AutoDoctor.Web.ViewModels.Part;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
+using System;
 
 namespace AutoDoctor.Controllers
 {
@@ -41,7 +45,6 @@ namespace AutoDoctor.Controllers
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin,Manufacturer")]
         public async Task<IActionResult> Create(PartViewModel model, IFormFile ImageFile)
         {
