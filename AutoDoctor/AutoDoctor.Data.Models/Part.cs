@@ -10,7 +10,7 @@ namespace AutoDoctor.Data.Models
         [Required, MaxLength(50)]
         public string Name { get; set; } = null!;
         public string ImageUrl { get; set; } = null!;
-        public int Quantity { get; set; } = 1;
+        public int Quantity { get; set; }
         
         [Required, Column(TypeName = "money")]
         public decimal Price { get; set; } = 0;

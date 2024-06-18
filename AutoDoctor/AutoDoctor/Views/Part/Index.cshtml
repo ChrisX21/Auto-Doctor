@@ -18,6 +18,9 @@
                 <div class="card-body d-flex flex-column justify-content-center">
                     <h5 class="card-title">@part.Name</h5>
                     <p class="card-text">Price: @string.Format("{0:C}", part.Price)</p>
+                    <div class="text-center mt-4">
+                        <a href="@Url.Action("Edit", new { id = part.Id })" class="btn btn-primary mx-1">Edit</a>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,0 +1,40 @@
+﻿@model AutoDoctor.Web.ViewModels.Part.PartViewModel
+
+@{
+    ViewData["Title"] = "Edit Part";
+}
+
+<h2 class="text-center mb-4">Edit Part</h2>
+
+<div class="container d-flex justify-content-center">
+    <div class="card p-4 shadow" style="max-width: 600px; width: 100%;">
+        <form asp-action="Edit" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Quantity" class="control-label"></label>
+                <input asp-for="Quantity" class="form-control" />
+                <span asp-validation-for="Quantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Upload Image</label>
+                <input type="file" name="ImageFile" class="form-control" />
+            </div>
+            <button type="submit" class="btn btn-primary w-100 mt-2">Save</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

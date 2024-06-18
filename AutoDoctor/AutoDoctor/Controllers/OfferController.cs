@@ -5,10 +5,6 @@ using AutoDoctor.Web.ViewModels.Part;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace AutoDoctor.Controllers
 {
@@ -42,6 +38,7 @@ namespace AutoDoctor.Controllers
         }
 
         [Authorize(Roles = "Seller, Admin")]
+        [ValidateAntiForgeryToken]
         [HttpPost]
         public async Task<IActionResult> Create(OfferDetailsViewModel model)
         {
@@ -106,6 +103,7 @@ namespace AutoDoctor.Controllers
         }
 
         [Authorize(Roles = "Seller, Admin")]
+        [ValidateAntiForgeryToken]
         [HttpPost]
         public async Task<IActionResult> Edit(Guid id, PartViewModel model, IFormFile ImageFile)
         {

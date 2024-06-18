@@ -4,10 +4,6 @@ using AutoDoctor.Web.ViewModels.Part;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using System;
 
 namespace AutoDoctor.Controllers
 {
@@ -45,6 +41,7 @@ namespace AutoDoctor.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin,Manufacturer")]
         public async Task<IActionResult> Create(PartViewModel model, IFormFile ImageFile)
         {
@@ -98,6 +95,7 @@ namespace AutoDoctor.Controllers
         public IActionResult Edit(Guid id)
         {
             var part = _partRepository.GetPartById(id);
+            
             if (part == null)
             {
                 return NotFound();
@@ -107,24 +105,32 @@ namespace AutoDoctor.Controllers
             {
                 Id = part.Id,
                 Name = part.Name,
-                ImageUrl = part.ImageUrl,
                 Quantity = part.Quantity,
-                Price = part.Price
+                Price = part.Price,
+                ImageUrl = part.ImageUrl,
+                Manufacturer = part.User
             };
 
             return View(model);
         }
 
+        [HttpPost]
         [Authorize(Roles = "Admin,Manufacturer")]
-        public IActionResult Delete(Guid id)
+        public IActionResult Edit(Part model)
         {
-            var part = _partRepository.GetPartById(id);
+            var part = _partRepository.GetPartById(model.Id);
+
             if (part == null)
             {
                 return NotFound();
             }
 
-            _partRepository.Delete(part);
+            part.Name = model.Name;
+            part.ImageUrl = model.ImageUrl ?? part.ImageUrl;
+            part.Quantity = model.Quantity;
+            part.Price = model.Price;
+
+            _partRepository.Update(part);
 
             return RedirectToAction("Index", "Part");
         }
