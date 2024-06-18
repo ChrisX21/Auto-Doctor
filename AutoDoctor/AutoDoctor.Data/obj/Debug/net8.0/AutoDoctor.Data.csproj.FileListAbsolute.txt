@@ -34,3 +34,5 @@ G:\Projects\Programming\Auto-Doctor\AutoDoctor\AutoDoctor.Data\obj\Debug\net8.0\
 C:\Users\chris\Music\Projects\Auto-Doctor\AutoDoctor\AutoDoctor.Data\bin\Debug\net8.0\AutoDoctor.Data.Models.dll
 C:\Users\chris\Music\Projects\Auto-Doctor\AutoDoctor\AutoDoctor.Data\bin\Debug\net8.0\AutoDoctor.Data.Models.pdb
 C:\Users\chris\Music\Projects\Auto-Doctor\AutoDoctor\AutoDoctor.Data\obj\Debug\net8.0\AutoDoct.27BBBD26.Up2Date
+G:\Projects\Programming\Auto-Doctor\AutoDoctor\AutoDoctor.Data\bin\Debug\net8.0\AutoDoctor.Web.ViewModels.dll
+G:\Projects\Programming\Auto-Doctor\AutoDoctor\AutoDoctor.Data\bin\Debug\net8.0\AutoDoctor.Web.ViewModels.pdb

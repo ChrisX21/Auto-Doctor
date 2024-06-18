@@ -124,6 +124,9 @@
             "projectReferences": {
               "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data.Models\\AutoDoctor.Data.Models.csproj": {
                 "projectPath": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Data.Models\\AutoDoctor.Data.Models.csproj"
+              },
+              "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Web.ViewModels\\AutoDoctor.Web.ViewModels.csproj": {
+                "projectPath": "G:\\Projects\\Programming\\Auto-Doctor\\AutoDoctor\\AutoDoctor.Web.ViewModels\\AutoDoctor.Web.ViewModels.csproj"
               }
             }
           }
@@ -164,6 +167,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.4, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [

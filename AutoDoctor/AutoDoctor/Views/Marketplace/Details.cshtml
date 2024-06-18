@@ -29,9 +29,10 @@
                     }
                     else
                     {
-                        <form method="post" action="@Url.Action("Buy", "Offer", new { id = @Model.OfferId })">
+                        <form method="post" action="@Url.Action("AddToCart", "Cart", new { offerId = Model.OfferId, quantity = 1 })">
                             <button type="submit" class="btn btn-primary mt-3 align-self-center w-100">Buy</button>
                         </form>
+
                     }
                 </div>
             </div>

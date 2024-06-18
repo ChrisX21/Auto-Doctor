@@ -1,0 +1,39 @@
+﻿@using AutoDoctor.Web.ViewModels.Cart
+@model IEnumerable<CartItem>
+
+<h2>Shopping Cart</h2>
+
+@if (Model.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Offer.Description</td>
+                    <td>@item.Quantity</td>
+                    <td>@item.Offer.Part.Price.ToString("C")</td>
+                    <td>
+                        <a asp-action="RemoveFromCart" asp-route-offerId="@item.OfferId">Remove</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div>
+        <a asp-action="Checkout" class="btn btn-primary">Proceed to Checkout</a>
+    </div>
+}
+else
+{
+    <p>Your shopping cart is empty.</p>
+}

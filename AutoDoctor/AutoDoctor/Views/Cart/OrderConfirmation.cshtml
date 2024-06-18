@@ -1,0 +1,29 @@
+﻿@using AutoDoctor.Web.ViewModels.Cart
+@model Order
+
+<h2>Order Confirmation</h2>
+
+<div>
+    <p><strong>Order ID:</strong> @Model.Id</p>
+    <p><strong>Status:</strong> @Model.Status</p>
+    <p><strong>Order Date:</strong> @Model.CreatedAt.ToString("yyyy-MM-dd HH:mm:ss")</p>
+</div>
+
+<h3>Ordered Items</h3>
+@if (Model.OrderOffers.Any())
+{
+    <ul>
+        @foreach (var orderOffer in Model.OrderOffers)
+        {
+            <li>@orderOffer.Offer.Description - Quantity: @orderOffer.Offer.Part.Quantity</li>
+        }
+    </ul>
+}
+else
+{
+    <p>No items in this order.</p>
+}
+
+<div>
+    <a asp-action="Index" class="btn btn-primary">Back to Cart</a>
+</div>

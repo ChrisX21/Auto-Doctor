@@ -15,7 +15,7 @@ namespace AutoDoctor
 
             // Add services to the container.
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
-           
+
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(connectionString));
 
@@ -23,9 +23,11 @@ namespace AutoDoctor
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders()
                 .AddDefaultUI();
-            
+
             builder.Services.AddScoped<IOfferRepository, OfferService>();
             builder.Services.AddScoped<IPartRepository, PartService>();
+            builder.Services.AddScoped<ICartRepository, CartService>();
+            builder.Services.AddScoped<IOrderRepository, OrderService>();
             builder.Services.AddScoped<Seeder>();
 
             builder.Services.Configure<IdentityOptions>(options =>
@@ -36,6 +38,15 @@ namespace AutoDoctor
                 options.Password.RequireNonAlphanumeric = false;
                 options.User.RequireUniqueEmail = true;
                 options.SignIn.RequireConfirmedEmail = false;
+            });
+
+            // Add session services
+            builder.Services.AddDistributedMemoryCache();
+            builder.Services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(30);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
             });
 
             builder.Services.AddControllersWithViews();
@@ -49,7 +60,6 @@ namespace AutoDoctor
                 seeder.SeedAsync().Wait();
             }
 
-
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
@@ -58,7 +68,6 @@ namespace AutoDoctor
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 
@@ -70,7 +79,8 @@ namespace AutoDoctor
             app.UseAuthentication();
             app.UseAuthorization();
 
-            
+            // Use session middleware
+            app.UseSession();
 
             app.MapControllerRoute(
                 name: "default",
